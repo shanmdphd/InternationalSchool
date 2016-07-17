@@ -1,0 +1,36 @@
+---
+title: "List"
+author: "Sungpil Han"
+date: "2016년 7월 16일"
+output: html_document
+---
+NeedSchool 외국인-국제학교 Full list 2016.07.16. 버젼입니다.
+
+엑셀 파일 첨부합니다.
+
+```{r global_options, include=FALSE}
+library(knitr)
+library(dplyr)
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r setup, include=FALSE}
+setwd("/Users/Sungpil/GIT/InternationalSchool")
+
+```
+
+```{r}
+School = read.csv("List.csv")
+USDKRW = 1138 # Currency
+
+# Final = 
+# School %>%  mutate(isPK = Start==0) %>% mutate(isK = Start <= 0.5) # %>% select(isPK, isK)
+
+Final = School %>% filter(Discount != "") %>% mutate(Total = format(KRW + USD*USDKRW/10000,digits=2)) %>% select(2:9, KRW, USD, Total, Discount)
+
+Col.Names = c("", "")
+dim(Final)
+
+kable(Final, row.names = 1) # col.names = Col.Names
+```
+
