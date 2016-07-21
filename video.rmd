@@ -1,0 +1,73 @@
+---
+title: "NeedSchool Video"
+author: "PhilDoc"
+output:
+  html_document:
+    fig_caption: no
+    force_captions: no
+    highlight: tango
+    keep_md: yes
+    number_sections: no
+    theme: flatly
+  pdf_document:
+    fig_width: 4
+    latex_engine: xelatex
+  word_document:
+    highlight: tango
+    keep_md: yes
+    reference_docx: template.docx
+---
+  
+
+```{r global_options, include=FALSE}
+# 무조건 실행하세요!
+library(tufte)
+library(knitr)
+library(dplyr)
+
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
+wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool")
+setwd(wd[2])
+```
+
+```{r}
+URL = "4j6lK0kbVys"
+
+# 853x480 # 640x360
+
+Youtube = function(URL){
+  paste0('<br><iframe width="640" height="360" src="https://www.youtube.com/embed/', URL, '" frameborder="0" allowfullscreen></iframe>')
+} 
+
+Vimeo = function(URL){
+  paste0('<br><iframe src="https://player.vimeo.com/video/', URL, '" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+}
+```
+
+## SIS
+
+
+## YISS
+1. YISS Introduction
+`r Vimeo("36381862")`
+
+## CI 
+1. The Chadwick Way in Songdo, South Korea
+`r Youtube("zBeUmAeEeZE")`
+
+1. Chadwick International - school promotion video "Through their eyes" 
+`r # Youtube("zDzhQHFKbqM")``r Vimeo("135307757")`
+
+## DIS 
+
+[Official Youtube Channel](https://www.youtube.com/channel/UCKTaTJz_KW_AWJeER5wK0mA/featured)
+
+1. Welcome to Daegu International School
+`r Youtube("C4OHPtEa0KY")`
+
+1. Jet Stream Special Report: The 2015-2016 Yearbook
+`r Youtube("4j6lK0kbVys")`
+
+1. Senior Chat (Class of 2016: The Never Ending Story)
+`r Youtube("ZlJpTRdcCYk")`
+

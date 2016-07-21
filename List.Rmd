@@ -1,17 +1,32 @@
 ---
 title: "NeedSchool"
 author: "Sungpil Han"
-output: html_document
+output:
+  html_document:
+    fig_caption: no
+    force_captions: no
+    highlight: tango
+    keep_md: yes
+    number_sections: no
+    theme: flatly
+  pdf_document:
+    fig_width: 4
+    latex_engine: xelatex
+  word_document:
+    highlight: tango
+    keep_md: yes
+    reference_docx: template.docx
 ---
 
 ```{r global_options, include=FALSE}
 # 무조건 실행하세요!
-
+library(tufte)
 library(knitr)
 library(dplyr)
-
+library(readODS)
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-setwd("/Users/Sungpil/GIT/InternationalSchool")
+wd = c("/Users/Sungpil/GIT/InternationalSchool", "d:/GIT/InternationalSchool")
+setwd(wd[2])
 ```
 
 [Sibling Discount] 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
@@ -29,16 +44,16 @@ setwd("/Users/Sungpil/GIT/InternationalSchool")
 
 
 ```{r}
-School = read.csv("List.csv")
+School = read.csv("List.csv",  fileEncoding = "UTF-8")
 USDKRW = 1138 # Currency
-
+read.ods("List.ods",  fileEncoding = "UTF-8")
 # Final = 
 # School %>%  mutate(isPK = Start==0) %>% mutate(isK = Start <= 0.5) %>% select(isPK, isK) # PK와 K가 개설되어 있는지를 알려주는 컬럼
 
 Final = School %>% filter(Discount != "") %>% mutate(Total = format(KRW + USD*USDKRW/10000,digits=2)) %>% select(2, 4:9, KRW, USD, Total, Discount, Tel)
 
 Col.Names = colnames(Final) 
-Col.Names[Col.Names=="Total"] = "KSW+USD (만원)"
+Col.Names[Col.Names=="Total"] = "KSW + USD"
 
 #c("", "")
 
@@ -50,13 +65,13 @@ kable(Final, row.names = 1, col.names = Col.Names) # col.names = Col.Names
 
 #kable(School)
 
+kable(School)
 ```
 
+## [독점정리] 국내학력 인정되는 국제학교/외국인학교	|	공지사항
 
+http://cafe.naver.com/assarabia/7756
 
-# [독점정리] 국내학력 인정되는 국제학교/외국인학교	|	공지사항
-
-http://cafe.naver.com/assarabia/7756  
 채드윅, 대구, 제주 국제학교의 가장 큰 장점은 역시 국내학력 인정이 된다는 것입니다.
 
 국내 초중고로 전학이 용이할 뿐만 아니라 국내 대학 진학시 검정고시를 따로 보지 않아도 된다는 큰 잇점이 있습니다.
@@ -73,11 +88,52 @@ http://cafe.naver.com/assarabia/7756
 PhilDoc
 
 ```{r}
+
 fix_missing <- function(x, na.value){
   x[x == na.value] <- NA
   x
 }
 
-
 ```
+
+
+
+```{r}
+URL = "4j6lK0kbVys"
+
+# 853x480 # 640x360
+
+Youtube = function(URL){
+  paste0('<br><iframe width="640" height="360" src="https://www.youtube.com/embed/', URL, '" frameborder="0" allowfullscreen></iframe>')
+} 
+
+Vimeo = function(URL){
+  paste0('<br><<iframe src="https://player.vimeo.com/video/', URL, '" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+}
+```
+
+
+## YISS
+1. YISS Introduction
+`r Vimeo("36381862")`
+
+## CI 
+1. The Chadwick Way in Songdo, South Korea
+`r Youtube("zBeUmAeEeZE")`
+
+1. Chadwick International - school promotion video "Through their eyes" 
+`r Youtube("zDzhQHFKbqM")`
+
+## DIS 
+
+[Official Youtube Channel](https://www.youtube.com/channel/UCKTaTJz_KW_AWJeER5wK0mA/featured)
+
+1. Welcome to Daegu International School
+`r Youtube("C4OHPtEa0KY")`
+
+1. Jet Stream Special Report: The 2015-2016 Yearbook
+`r Youtube("4j6lK0kbVys")`
+
+1. Senior Chat (Class of 2016: The Never Ending Story)
+`r Youtube("ZlJpTRdcCYk")`
 
