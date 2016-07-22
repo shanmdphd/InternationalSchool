@@ -1,21 +1,6 @@
 ---
 title: "NeedSchool"
 author: "Sungpil Han"
-output:
-  html_document:
-    fig_caption: no
-    force_captions: no
-    highlight: tango
-    keep_md: yes
-    number_sections: no
-    theme: flatly
-  pdf_document:
-    fig_width: 4
-    latex_engine: xelatex
-  word_document:
-    highlight: tango
-    keep_md: yes
-    reference_docx: template.docx
 ---
 
 ```{r global_options, include=FALSE}
@@ -23,15 +8,16 @@ output:
 library(tufte)
 library(knitr)
 library(dplyr)
-library(readODS)
+library(xlsx)
+library(lubridate)
+
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-wd = c("/Users/Sungpil/GIT/InternationalSchool", "d:/GIT/InternationalSchool")
+wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool")
 setwd(wd[2])
 ```
 
-[Sibling Discount] 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
+# [Sibling Discount] 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
 
-# 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
 요즘 형제 할인(Sibling Discount)에 대해 문의하는 학부모님들이 부쩍 늘었습니다. 
 
 현재까지 카페 글에 올라온 내용을 바탕으로 정리해보았습니다. 
@@ -44,9 +30,10 @@ setwd(wd[2])
 
 
 ```{r}
-School = read.csv("List.csv",  fileEncoding = "UTF-8")
+ymd(date())
+School = read.xlsx("List.xls",  sheetIndex=1, encoding = "UTF-8")
 USDKRW = 1138 # Currency
-read.ods("List.ods",  fileEncoding = "UTF-8")
+
 # Final = 
 # School %>%  mutate(isPK = Start==0) %>% mutate(isK = Start <= 0.5) %>% select(isPK, isK) # PK와 K가 개설되어 있는지를 알려주는 컬럼
 
@@ -60,13 +47,40 @@ Col.Names[Col.Names=="Total"] = "KSW + USD"
 #== "Class"
 
 kable(Final, row.names = 1, col.names = Col.Names) # col.names = Col.Names
-
-# 등록금 비싼 학교부터 Search해보자.
-
-#kable(School)
-
-kable(School)
 ```
+
+# 제목 (2016.07)
+
+가장 중요한 고려사항인 등록금에 대해 정리하였습니다.
+
+가장 비싼 학교는 채드윅국제학교(3430만원, G1기준), 
+
+가장 싼 학교는 평택크리스천외국인학교(1255만원, G1기준) 이었습니다.
+
+이 자료는 2016년 7월 22일 현재의 최신 자료입니다.
+
+Total의 단위는 KRW(만원)이고 클릭하면 각 학교의 등록금 웹페이지로 이동합니다.
+
+선입견으로 NLCS Jeju가 highest 3안에 들 줄 알았는데 아니었던게 의외이고, 덜위치가 생각보다 비쌌던게 의외입니다. 서울에서 가장 싼 학교는 지구촌기독외국인학교였습니다.
+
+기독교 세학교가 가장 낮은 위치에 랭크된 것이 특징적입니다. 잘 알려진 기독교 학교인 GSIS, YISS도 median보다는 낮게 위치하고 있습니다.
+
+정확한 자료의 전달을 추구하는 PhilDoc 올림
+
+```{r}
+Tuition = School %>% filter(KRW != "") %>% mutate(Total = format(KRW + USD*USDKRW/10000,digits=2)) %>% mutate(FullName = paste0("[", Name, "](", Homepage, ")")) %>% mutate(TotalWebsite = paste0("[", Total, "](", TuitionData, ")")) %>% arrange(desc(Total)) %>% select(Abbr, FullName, TuitionYear, KRW, USD, TotalWebsite, Tel, Class, City, Year) 
+
+Col.Names = colnames(Tuition) 
+Col.Names[Col.Names=="TuitionYear"] = "School Year"
+
+kable(Tuition, row.names = 1, col.names = Col.Names) # col.names = Col.Names
+
+
+
+```
+
+
+
 
 ## [독점정리] 국내학력 인정되는 국제학교/외국인학교	|	공지사항
 
@@ -111,29 +125,3 @@ Vimeo = function(URL){
   paste0('<br><<iframe src="https://player.vimeo.com/video/', URL, '" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
 }
 ```
-
-
-## YISS
-1. YISS Introduction
-`r Vimeo("36381862")`
-
-## CI 
-1. The Chadwick Way in Songdo, South Korea
-`r Youtube("zBeUmAeEeZE")`
-
-1. Chadwick International - school promotion video "Through their eyes" 
-`r Youtube("zDzhQHFKbqM")`
-
-## DIS 
-
-[Official Youtube Channel](https://www.youtube.com/channel/UCKTaTJz_KW_AWJeER5wK0mA/featured)
-
-1. Welcome to Daegu International School
-`r Youtube("C4OHPtEa0KY")`
-
-1. Jet Stream Special Report: The 2015-2016 Yearbook
-`r Youtube("4j6lK0kbVys")`
-
-1. Senior Chat (Class of 2016: The Never Ending Story)
-`r Youtube("ZlJpTRdcCYk")`
-

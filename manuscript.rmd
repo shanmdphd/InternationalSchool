@@ -24,7 +24,8 @@ output:
 library(tufte)
 library(knitr)
 library(dplyr)
-library(readODS)
+library(xlsx)
+
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
 wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool")
 setwd(wd[2])
