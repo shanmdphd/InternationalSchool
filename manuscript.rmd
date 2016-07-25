@@ -1,21 +1,6 @@
 ---
 title: "국제학교 외국인학교 출판 관련"
 author: "PhilDoc"
-output:
-  html_document:
-    fig_caption: no
-    force_captions: no
-    highlight: tango
-    keep_md: yes
-    number_sections: no
-    theme: flatly
-  pdf_document:
-    fig_width: 4
-    latex_engine: xelatex
-  word_document:
-    highlight: tango
-    keep_md: yes
-    reference_docx: template.docx
 ---
   
 
@@ -27,8 +12,8 @@ library(dplyr)
 library(xlsx)
 
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool")
-setwd(wd[2])
+wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool", "/Users/Sungpil/GIT/InternationalSchool")
+setwd(wd[3])
 ```
 
 

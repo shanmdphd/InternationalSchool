@@ -1,21 +1,23 @@
-# NeedSchool
-Sungpil Han  
+# NeedSchool Video
+PhilDoc  
   
 
 
 
 
+## SIS
+
 
 ## YISS
 1. YISS Introduction
-<br><<iframe src="https://player.vimeo.com/video/36381862" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<br><iframe src="https://player.vimeo.com/video/36381862" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## CI 
 1. The Chadwick Way in Songdo, South Korea
 <br><iframe width="640" height="360" src="https://www.youtube.com/embed/zBeUmAeEeZE" frameborder="0" allowfullscreen></iframe>
 
 1. Chadwick International - school promotion video "Through their eyes" 
-<br><iframe width="640" height="360" src="https://www.youtube.com/embed/zDzhQHFKbqM" frameborder="0" allowfullscreen></iframe>
+<br><iframe src="https://player.vimeo.com/video/135307757" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## DIS 
 
