@@ -5,6 +5,7 @@ html_document:
   keep_md: yes
   number_sections: no
   theme: readable
+  toc: no
 pdf_document:
   fig_width: 4
   latex_engine: xelatex
