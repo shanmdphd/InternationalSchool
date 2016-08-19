@@ -1,3 +1,16 @@
-{
-    "plugins": ["mathjax"]
-}
+{  
+   "gitbook":"2.x.x",
+   "plugins":[  
+      "mathjax",
+      "styles-sass"
+   ],
+   "links":{  
+      "sidebar":{  
+         "NeedSchool Cafe":"http://needschool.co.kr/",
+         "NeedSchool Site":"http://needschool.net/"
+      }
+   },
+   "pdf":{  
+      "fontSize":9
+   }
+} 

@@ -1,5 +1,5 @@
 # Summary
 
-* [First Chapter](chapter1.md)
-* [List.md](List.md)
-
+* [Introduction](Manuscript.md)
+* [List](List.md)
+* [Video](Video.md)

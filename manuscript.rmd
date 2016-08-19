@@ -10,9 +10,6 @@ library(dplyr)
 library(xlsx)
 
 opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-
-wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool", "/Users/Sungpil/GIT/InternationalSchool")
-setwd(wd[3])
 ```
 
 {frontmatter}
