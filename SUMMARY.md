@@ -1,5 +1,5 @@
 # Summary
 
-* [Manusciprt](Manuscript.md)
+* [Manusciprt](manuscript.md)
 * [List](List.md)
-* [Video](Video.md)
+* [Video](video.md)
