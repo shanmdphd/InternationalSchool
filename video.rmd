@@ -1,66 +1,42 @@
 ---
-title: "NeedSchool Video"
-author: "PhilDoc"
-output:
-  html_document:
-    fig_caption: no
-    force_captions: no
-    highlight: tango
-    keep_md: yes
-    number_sections: no
-    theme: flatly
-  pdf_document:
-    fig_width: 4
-    latex_engine: xelatex
-  word_document:
-    highlight: tango
-    keep_md: yes
-    reference_docx: template.docx
+title: "국제학교 주요 홍보 동영상 모음"
 ---
-  
 
 ```{r global_options, include=FALSE}
-# 무조건 실행하세요!
-library(tufte)
 library(knitr)
 library(dplyr)
 
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool")
-setwd(wd[2])
+opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
+
+wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool", "/Users/Sungpil/GIT/InternationalSchool")
+setwd(wd[3])
 ```
 
 ```{r}
-URL = "4j6lK0kbVys"
-
 # 853x480 # 640x360
+WIDTH = 640
+HEIGHT = 360
 
 Youtube = function(URL){
-  paste0('<br><iframe width="640" height="360" src="https://www.youtube.com/embed/', URL, '" frameborder="0" allowfullscreen></iframe>')
+  paste0('<br><iframe width=',WIDTH,' height=',HEIGHT,' src="https://www.youtube.com/embed/', URL, '" frameborder="0" allowfullscreen></iframe>')
 } 
 
 Vimeo = function(URL){
-  paste0('<br><iframe src="https://player.vimeo.com/video/', URL, '" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+  paste0('<br><iframe src="https://player.vimeo.com/video/', URL, '" width=',WIDTH,' height=',HEIGHT,' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
 }
 ```
 
-## SIS
+# 국제학교 
 
-
-## YISS
-1. YISS Introduction
-`r Vimeo("36381862")`
-
-## CI 
+## CI
 1. The Chadwick Way in Songdo, South Korea
 `r Youtube("zBeUmAeEeZE")`
 
 1. Chadwick International - school promotion video "Through their eyes" 
-`r # Youtube("zDzhQHFKbqM")``r Vimeo("135307757")`
+`r Youtube("zDzhQHFKbqM")`
 
-## DIS 
-
-[Official Youtube Channel](https://www.youtube.com/channel/UCKTaTJz_KW_AWJeER5wK0mA/featured)
+## DIS
+[Official Youtube](https://www.youtube.com/channel/UCKTaTJz_KW_AWJeER5wK0mA/featured)
 
 1. Welcome to Daegu International School
 `r Youtube("C4OHPtEa0KY")`
@@ -71,3 +47,49 @@ Vimeo = function(URL){
 1. Senior Chat (Class of 2016: The Never Ending Story)
 `r Youtube("ZlJpTRdcCYk")`
 
+## Branksome Hall Asia
+[Official Livestream](http://livestream.com/branksomehallasia)
+
+## NLCS Jeju
+1. NLCS JEJU PROMOTIONAL VIDEO ¨START HERE, GO ANYWHERE¨ 
+`r Youtube("bzAUVyu-wKM")`
+
+1. 여러분의 인생은 이곳 NLCS JEJU에서 시작됩니다. 우리 학교 출신인 여러분은 진정 어디든 갈 수 있습니다 
+`r Youtube("ZdNDWIMu3FA")`
+
+1. Principal for a day
+`r Youtube("lnbvxm1-FYo")`
+
+## KIS Jeju
+1. Welcome to the Dorms : Parents Weekend Edition
+`r Youtube("W4Yx0rJFqJI")`
+
+1. Korea International School Video Yearbook 2015-2016 
+`r Youtube("tB-ck7M3yWo")`
+
+1. Korea International School Video Yearbook 2014-2015
+`r Youtube("Q780c-8Vcsg")`
+
+# 외국인학교
+
+## SFS
+1. About Seoul Foreign School
+`r Youtube("DFFki-XHso0")`
+
+## SIS
+1. Why you should choose SIS
+`r Youtube("kg8QLZsPGsQ")`
+
+## YISS
+1. YISS promotional video (extended version) 
+`r Youtube("E8DTctLyoU8")`
+
+# 그외
+1. 조기유학! 이제는 제주로~~~
+`r Youtube("ITI6UYm7kX4")`
+
+
+```{r, include=FALSE, eval=FALSE}
+`r Youtube("")`
+`r Vimeo("")`
+```
