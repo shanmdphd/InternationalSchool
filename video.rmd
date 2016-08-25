@@ -60,6 +60,10 @@ Vimeo = function(URL){
 1. Principal for a day
 `r Youtube("lnbvxm1-FYo")`
 
+1. Real Madrid Foundation Campus Experience at NLCS Jeju
+`r Youtube("xY8qM3DkWOY")`
+
+
 ## KIS Jeju
 1. Welcome to the Dorms : Parents Weekend Edition
 `r Youtube("W4Yx0rJFqJI")`
