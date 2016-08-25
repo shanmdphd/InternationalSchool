@@ -1,11 +1,5 @@
----
-title: "NeedSchool"
-author: "Sungpil Han"
----
-
 ```{r global_options, include=FALSE}
 # 무조건 실행하세요!
-library(tufte)
 library(knitr)
 library(dplyr)
 library(xlsx)
@@ -14,7 +8,8 @@ library(lubridate)
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
-# [Sibling Discount] 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
+# Sibling Discount
+형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
 
 요즘 형제 할인(Sibling Discount)에 대해 문의하는 학부모님들이 부쩍 늘었습니다. 
 
@@ -28,7 +23,7 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, 
 
 
 ```{r}
-School = read.xlsx("List.xls",  sheetIndex=1, encoding = "UTF-8")
+School = read.xlsx("resources/List.xls",  sheetIndex=1, encoding = "UTF-8")
 USDKRW = 1138 # Currency
 
 # Final = 
@@ -92,9 +87,6 @@ http://cafe.naver.com/assarabia/7756
 등록금도 최신자료로 업데이트 하였습니다.
 
 자신의 재정상태/거주지역/국적/선호도/인지도에 따라서 학교 결정하는데 도움되시길
-```{r}
-
-```
 
 PhilDoc
 

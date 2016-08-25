@@ -58,6 +58,11 @@ SIS
 
 1.  Why you should choose SIS <br><iframe width=640 height=360 src="https://www.youtube.com/embed/kg8QLZsPGsQ" frameborder="0" allowfullscreen></iframe>
 
+Dwight School Seoul
+-------------------
+
+1.  The Dwight Experience - Tyler Biswurm, Class of 2016 <br><iframe width=640 height=360 src="https://www.youtube.com/embed/E812qN0WF4" frameborder="0" allowfullscreen></iframe>
+
 YISS
 ----
 

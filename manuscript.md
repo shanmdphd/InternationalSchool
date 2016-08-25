@@ -99,9 +99,3 @@ http://cafe.naver.com/assarabia/10766
 
 PhilDoc
 
-
-I>
-
-A>
-
-Q>
