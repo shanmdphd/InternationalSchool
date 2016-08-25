@@ -1,8 +1,6 @@
-국제학교 주요 홍보 동영상 모음
-================
 
-국제학교
-========
+국제학교 주요 홍보 동영상 모음
+==============================
 
 CI
 --
@@ -35,6 +33,8 @@ NLCS Jeju
 2.  여러분의 인생은 이곳 NLCS JEJU에서 시작됩니다. 우리 학교 출신인 여러분은 진정 어디든 갈 수 있습니다 <br><iframe width=640 height=360 src="https://www.youtube.com/embed/ZdNDWIMu3FA" frameborder="0" allowfullscreen></iframe>
 
 3.  Principal for a day <br><iframe width=640 height=360 src="https://www.youtube.com/embed/lnbvxm1-FYo" frameborder="0" allowfullscreen></iframe>
+
+4.  Real Madrid Foundation Campus Experience at NLCS Jeju <br><iframe width=640 height=360 src="https://www.youtube.com/embed/xY8qM3DkWOY" frameborder="0" allowfullscreen></iframe>
 
 KIS Jeju
 --------
