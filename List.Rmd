@@ -12,8 +12,6 @@ library(xlsx)
 library(lubridate)
 
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-wd = c("/Users/Sungpil/GIT/InternationalSchool", "D:/GIT/InternationalSchool")
-setwd(wd[2])
 ```
 
 # [Sibling Discount] 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
@@ -30,7 +28,6 @@ setwd(wd[2])
 
 
 ```{r}
-ymd(date())
 School = read.xlsx("List.xls",  sheetIndex=1, encoding = "UTF-8")
 USDKRW = 1138 # Currency
 
