@@ -1,0 +1,44 @@
+--- 
+title: "International Schools in Korea"
+author: ["한성필, 성호준, 김정훈"]
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+link-citations: yes
+github-repo: shanmdphd/InternationalSchool
+description: "니드스쿨의 첫번째 책입니다. 국제학교/외국인학교의 모든 정보를 다룹니다."
+url: 'http\://needschool.net/book'
+cover-image: cover/cover.png
+---
+
+```{r global_options, include=FALSE}
+# 무조건 실행하세요!
+library(knitr)
+library(dplyr)
+library(xlsx)
+library(lubridate)
+
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', include = FALSE)
+source("src/Youtube.R")
+
+# http://www.color-hex.com/
+```
+
+# 머릿말{-}
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::include_graphics('cover/cover.png')
+```
+
+2010년 이후 국제학교에 대한 학부모들의 관심이 폭발적으로 증가하였으나 이에 대한 체계화된 정보가 극도로 부족한 상황에서 보다 신뢰있고 종합적인 정보를 전달하고자 합니다. 실제로 자녀를 국제학교를 보내고 싶어하는 니드스쿨 운영자들이 수년간 축적한 경험과 자료를 총망라할 예정입니다.
+
+이 책에서 다룰 내용은 다음과 같습니다.
+
+* 국제학교와 외국인학교의 비교
+* 좋은 국제학교 선택하는 방법
+* 입시에서 성공하는 전략
+
+2016년 말에 출판될 예정입니다. 사전주문(pre-order)을 통해 후원해주시면 감사의 편지와 함께 가장 빠르게 책을 받아보실 수 있으며 니드스쿨 카페의 각종 혜택을 받으실 수 있습니다. 
+
+이 책은 현재 [Creative Commons Attribution-NonCommercial-NoDerivs 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/us/) 라이센스를 따릅니다.

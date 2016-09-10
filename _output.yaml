@@ -1,3 +1,19 @@
+bookdown::gitbook:
+  css: css/style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">International Schools in Korea</a></li>
+      after: |
+        <li><a href="http://needschool.co.kr/" target="blank">Copyright, Needschool</a></li>
+    edit:
+      link: https://github.com/shanmdphd/InternationalSchool/edit/master/%s
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+bookdown::epub_book: default
 github_document: 
 html_document:
   fig_caption: no

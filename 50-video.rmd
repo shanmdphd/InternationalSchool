@@ -1,24 +1,20 @@
-```{r global_options, include=FALSE}
-library(knitr)
-library(dplyr)
-opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo=FALSE, warning=FALSE, message=FALSE)
-source("src/Youtube.R")
-```
-
 ```{r, include=FALSE, eval=FALSE}
 `r Youtube("")`
 `r Vimeo("")`
 ```
-# 국제학교 주요 홍보 동영상 모음
 
-## CI
+# 홍보 동영상 모음 {#video}
+
+## 국제학교
+
+### CI
 1. The Chadwick Way in Songdo, South Korea
 `r Youtube("zBeUmAeEeZE")`
 
 1. Chadwick International - school promotion video "Through their eyes" 
 `r Youtube("zDzhQHFKbqM")`
 
-## DIS
+### DIS
 [Official Youtube](https://www.youtube.com/channel/UCKTaTJz_KW_AWJeER5wK0mA/featured)
 
 1. Welcome to Daegu International School
@@ -30,10 +26,10 @@ source("src/Youtube.R")
 1. Senior Chat (Class of 2016: The Never Ending Story)
 `r Youtube("ZlJpTRdcCYk")`
 
-## Branksome Hall Asia
+### Branksome Hall Asia
 [Official Livestream](http://livestream.com/branksomehallasia)
 
-## NLCS Jeju
+### NLCS Jeju
 1. NLCS JEJU PROMOTIONAL VIDEO ¨START HERE, GO ANYWHERE¨ 
 `r Youtube("bzAUVyu-wKM")`
 
@@ -46,8 +42,24 @@ source("src/Youtube.R")
 1. Real Madrid Foundation Campus Experience at NLCS Jeju
 `r Youtube("xY8qM3DkWOY")`
 
+1. 지원방법
+`r Youtube("z_6gp0MHuGs")`
 
-## KIS Jeju
+NLCS Jeju에서 공식 유튜브 채널을 통해 최근 지원 방법에 대한 안내동영상을 업로드하였습니다. 
+
+이 영상에 따르면 NLCS Jeju에는 매년 800명이 지원하고 1/3만 합격한다고 하니 270명에게만 허락되는 셈입니다. 쉬운 길은 아니네요. 
+
+많은 분들이 궁금해하는 입학시험에 대해서도 나오네요. 
+
+대놓고 입학시험 어렵다고 말하네요. 
+
+4학년 이상은 영어, 수학, CAT를 컴퓨터로 보고 인터뷰를 본다고 합니다. 2,3학년은 수학, 영어 시험과 수업참여를 하게 됩니다. 1학년 이하는 수업참여만 있고요~ 카페에 시험 전형에 대해 많은 글들 올라와 있으므로 참고하세요^^
+
+admissions@nlcsjeju.kr 이메일 보내거나 064-793-8833로 문의하세요~
+
+PS. 깨알같은 서울대 입학 실적 홍보^^ Oxford, Cambridge, Stanford도 보이는군요..
+
+### KIS Jeju
 1. Welcome to the Dorms : Parents Weekend Edition
 `r Youtube("W4Yx0rJFqJI")`
 
@@ -57,27 +69,24 @@ source("src/Youtube.R")
 1. Korea International School Video Yearbook 2014-2015
 `r Youtube("Q780c-8Vcsg")`
 
-# 외국인학교
+## 외국인학교
 
-## SFS
+### SFS
 1. About Seoul Foreign School
 `r Youtube("DFFki-XHso0")`
 
-## SIS
+### SIS
 1. Why you should choose SIS
 `r Youtube("kg8QLZsPGsQ")`
 
-## Dwight School Seoul
+### Dwight School Seoul
 1. The Dwight Experience - Tyler Biswurm, Class of 2016 
-`r Youtube("E812qN0WF4")`
+`r Youtube("_E812qN0WF4")`
 
-## YISS
+### YISS
 1. YISS promotional video (extended version) 
 `r Youtube("E8DTctLyoU8")`
 
-# 그외
+## 기타
 1. 조기유학! 이제는 제주로~~~
 `r Youtube("ITI6UYm7kX4")`
-
-
-
