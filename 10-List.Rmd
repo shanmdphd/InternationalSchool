@@ -23,10 +23,6 @@ Final = School %>% filter(Discount != "") %>% mutate(Total = format(KRW + USD*US
 Col.Names = colnames(Final) 
 Col.Names[Col.Names=="Total"] = "KSW + USD"
 
-#c("", "")
-
-#== "Class"
-
 kable(Final, row.names = 1, col.names = Col.Names) # col.names = Col.Names
 ```
 
@@ -55,7 +51,4 @@ Col.Names = colnames(Tuition)
 Col.Names[Col.Names=="TuitionYear"] = "School Year"
 
 kable(Tuition, row.names = 1, col.names = Col.Names) # col.names = Col.Names
-
-
-
 ```
