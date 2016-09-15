@@ -3,11 +3,13 @@ library(dplyr)
 library(xlsx)
 library(knitr)
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE, message = FALSE, results = "asis")
+
 School = read.xlsx("resources/List.xls",  sheetIndex = 1, encoding = "UTF-8", startRow = 2, endRow = NULL)
 USDKRW = 1112 # Currency - 2016-08-26
 ```
 
 # Pre-K, K가 개설된 국제학교, 외국인학교 리스트 {-}
+![](http://i.imgur.com/ZKRI5lc.jpg)
 
 # Pre-K가 개설된 학교
 ```{r}

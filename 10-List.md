@@ -1,6 +1,7 @@
 
 
 # Pre-K, K가 개설된 국제학교, 외국인학교 리스트 {-}
+![](http://i.imgur.com/ZKRI5lc.jpg)
 
 # Pre-K가 개설된 학교
 
