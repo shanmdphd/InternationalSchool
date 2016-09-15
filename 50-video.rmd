@@ -1,5 +1,6 @@
 ```{r, include = FALSE, message = FALSE}
 library(dplyr)
+library(xlsx)
 library(knitr)
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE, message = FALSE, results = "asis")
 ```
@@ -12,10 +13,24 @@ knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE
 
 ```{r}
 # Read School List
-School = read.xlsx("resources/List.xls",  sheetIndex = 1, encoding = "UTF-8", startRow = 2, endRow = NULL)
+School <- read.xlsx("resources/List.xls",  sheetIndex = 1, encoding = "UTF-8", startRow = 2, endRow = NULL)
+USDKRW <- 1100
+
+Vtuition <- School %>% filter(KRW != "") %>% mutate(Total = format(KRW + USD*USDKRW/10000,digits=2)) %>% mutate(FullName = paste0("[", Name, "](", Homepage, ")")) %>% mutate(TotalWebsite = paste0("[", Total, "](", TuitionData, ")")) %>% arrange(desc(Total)) %>% select(Abbr, FullName, KRW, USD, TotalWebsite, Tel, Class, City, Year) 
+
+Col.Names = colnames(Vtuition) 
+#Col.Names[Col.Names=="TuitionYear"] = "School Year"
+Col.Names[Col.Names=="KRW"] = "만원"
+Col.Names[Col.Names=="USD"] = "달러"
+Col.Names[Col.Names=="TotalWebsite"] = "총합(만원)"
+Col.Names[Col.Names=="Year"] = "설립연도"
+
+#kable(Vtuition, row.names = 1, col.names = Col.Names) # col.names = Col.Names
+
 
 # Read Remote Data
-Video <- read.csv("https://www.dropbox.com/s/m5up1wf73xne0b9/schoolyoutube.txt?dl=1", stringsAsFactors = FALSE)
+Video <- read.csv("youtubelist.csv", stringsAsFactors = FALSE)
+#Video <- read.csv("https://www.dropbox.com/s/m5up1wf73xne0b9/schoolyoutube.txt?dl=1", stringsAsFactors = FALSE)
 
 # Read Local Data
 #Video <- read.csv("youtubelist.csv", stringsAsFactors = FALSE);View(Video)
@@ -30,11 +45,14 @@ for (h in 1:length(Vgroup)){
   Vlist <- Vtube %>% filter(Group == Vgroup[h])
   Vschool = unique(Vlist$School)
   for (i in 1:length(Vschool)){
-    cat("\n", "## ", Vschool[i], "\n\n", sep = "")
-    print(kable(School %>% filter(Abbr == Vschool[i]) %>% select(City, Address, Year, Homepage, Tel, KRW, USD), row.names = FALSE))
-    cat('\n')
+    cat("\n", "## ", Vschool[i], "\n", sep = "")
+    if (Vschool[i] != "ETC" & Vschool[i] != "SJA Jeju"){
+      cat("**[School Profile by NeedSchool DB v1.0]**\n\n")
+      print(kable(Vtuition %>% filter(Abbr == Vschool[i]) %>% select("Name" = FullName, KRW, USD, "Total Tuition"= TotalWebsite, Tel, City, Year)))
+      cat("\n\n---\n")
+    }
     # print(t(School %>% filter(Abbr == Vschool[i]) %>% select(City, Address, Year, Homepage, Tel, KRW, USD)))
-    #print(School %>% filter(Abbr == Vschool[i]) %>% select(City, Address, Year, Homepage, Tel, KRW, USD))
+    # print(School %>% filter(Abbr == Vschool[i]) %>% select(City, Address, Year, Homepage, Tel, KRW, USD))
     Vdata <- Vlist %>% filter(School == Vschool[i])
     for (j in 1:dim(Vdata)[1]){
       cat("\n\n**[", Vdata$Title[j], "](https://youtu.be/", Vdata$ID[j], ")**\n", Vdata$Comment[j], "\n", sep = "")

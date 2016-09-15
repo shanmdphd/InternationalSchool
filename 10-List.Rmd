@@ -1,3 +1,26 @@
+```{r, include = FALSE, message = FALSE}
+library(dplyr)
+library(xlsx)
+library(knitr)
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE, message = FALSE, results = "asis")
+School = read.xlsx("resources/List.xls",  sheetIndex = 1, encoding = "UTF-8", startRow = 2, endRow = NULL)
+USDKRW = 1112 # Currency - 2016-08-26
+```
+
+# Pre-K, K가 개설된 국제학교, 외국인학교 리스트 {-}
+
+# Pre-K가 개설된 학교
+```{r}
+Select <- School %>% filter(KRW != "") %>% mutate(Total = format(KRW + USD*USDKRW/10000,digits=2)) %>% mutate(FullName = paste0("[", Name, "](", Homepage, ")")) %>% mutate(TotalWebsite = paste0("[", Total, "](", TuitionData, ")")) %>% arrange(desc(Total)) %>% select(City, Class, Abbr, FullName, KRW, USD, "Total Tuition"= TotalWebsite, Year, Start) 
+
+kable(Select %>% filter(Start == 0) %>% select(-Start) %>% arrange(City), row.names = 1)
+```
+
+# K가 개설된 학교
+```{r}
+kable(Select %>% filter(Start == 0 | Start == 0.5) %>% select(-Start) %>% arrange(City), row.names = 1)
+```
+
 # Sibling Discount
 형제, 남매, 자매할인 되는 학교 리스트(2016.07.18.)
 
@@ -12,8 +35,6 @@
 
 
 ```{r}
-School = read.xlsx("resources/List.xls",  sheetIndex = 1, encoding = "UTF-8", startRow = 2, endRow = NULL)
-USDKRW = 1112 # Currency - 2016-08-26
 
 # Final = 
 # School %>%  mutate(isPK = Start==0) %>% mutate(isK = Start <= 0.5) %>% select(isPK, isK) # PK와 K가 개설되어 있는지를 알려주는 컬럼
@@ -25,6 +46,9 @@ Col.Names[Col.Names=="Total"] = "KSW + USD"
 
 kable(Final, row.names = 1, col.names = Col.Names) # col.names = Col.Names
 ```
+
+
+
 
 # 등록금 
 
@@ -52,3 +76,4 @@ Col.Names[Col.Names=="TuitionYear"] = "School Year"
 
 kable(Tuition, row.names = 1, col.names = Col.Names) # col.names = Col.Names
 ```
+
