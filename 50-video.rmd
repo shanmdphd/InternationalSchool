@@ -29,7 +29,7 @@ Col.Names[Col.Names=="Year"] = "설립연도"
 
 
 # Read Remote Data
-Video <- read.csv("youtubelist.csv", stringsAsFactors = FALSE)
+Video <- read.csv("resources/youtubelist.csv", stringsAsFactors = FALSE)
 #Video <- read.csv("https://www.dropbox.com/s/m5up1wf73xne0b9/schoolyoutube.txt?dl=1", stringsAsFactors = FALSE)
 
 # Read Local Data
