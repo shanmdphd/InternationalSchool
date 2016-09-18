@@ -1,7 +1,11 @@
 
 
-# Pre-K, K가 개설된 국제학교, 외국인학교 리스트 {-}
 ![](http://i.imgur.com/ZKRI5lc.jpg)
+
+# Pre-K, K가 개설된 국제학교, 외국인학교 리스트 {-}
+
+- 요즘 외국인학교에서 Pre-K 프로그램을 보다 풍성하게 하는 것을 과제로 하는게 아닐까 싶을 정도로 Pre-K에 많은 노력을 기울이고 있습니다.
+- 소수의 학교를 제외하고는 모두 Pre-K 혹은 K를 운영하고 있습니다. 총 28개의 국제학교, 외국인학교 중 18개 학교에서 Pre-K를 운영중이고 26개 학교에서 K를 운영하고 있습니다.
 
 # Pre-K가 개설된 학교
 
@@ -68,7 +72,6 @@
 혹시 알고 계신 내용이 있으면 댓글로 알려주세요^^ (미니허니님 감사합니다.)
 
 정보수집하고 나누는걸 즐기는 PhilDoc 올림
-
 
 
      Language   Address             Year  Abbr        Name                          Homepage                     Start    KRW     USD  KSW + USD   Discount                                                                                     Tel          

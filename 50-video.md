@@ -295,6 +295,14 @@ Name                                               KRW    USD  Total Tuition    
 
 ---
 
+
+**[SFS 2016-2017 Welcome to Our House](https://youtu.be/ooJtGZ2VxA4)**
+선생님들이 만든 학생들 환영 비디오입니다.
+
+![](http://img.youtube.com/vi/ooJtGZ2VxA4/mqdefault.jpg) 
+
+---
+
 ## SIS
 **[School Profile by NeedSchool DB v1.0]**
 
@@ -348,6 +356,14 @@ Name                                                    KRW   USD  Total Tuition
 2016년에 열린 DSS의 졸업식 뉴스입니다.
 
 ![](http://img.youtube.com/vi/QOwLp31yOkk/mqdefault.jpg) 
+
+---
+
+
+**[Dwight School Seoul at a glance](https://youtu.be/cGzZ4q6zjNc)**
+
+
+![](http://img.youtube.com/vi/cGzZ4q6zjNc/mqdefault.jpg) 
 
 ---
 
@@ -468,6 +484,46 @@ Name                                                     KRW    USD  Total Tuiti
 체육관의 모습을 볼 수 있습니다.
 
 ![](http://img.youtube.com/vi/-E6OVTVcgjg/mqdefault.jpg) 
+
+---
+
+## APIS
+**[School Profile by NeedSchool DB v1.0]**
+
+
+
+Name                                                        KRW    USD  Total Tuition                                                    Tel           City    Year
+--------------------------------------------------------  -----  -----  ---------------------------------------------------------------  ------------  -----  -----
+[아시아퍼시픽국제외국인학교](http://www.apis.seoul.kr )    1630   5500  [2235](http://www.apis.seoul.kr/admissions/tuition-and-fees/ )   02-907-2747   서울    2006
+
+
+---
+
+
+**[Asia Pacific International School Class of 2016 Graduation Video](https://youtu.be/uo0mMxIgua4)**
+APIS 2016 졸업생의 thank you 영상입니다.
+
+![](http://img.youtube.com/vi/uo0mMxIgua4/mqdefault.jpg) 
+
+---
+
+## KKFS
+**[School Profile by NeedSchool DB v1.0]**
+
+
+
+Name                                           KRW   USD  Total Tuition                                 Tel            City    Year
+-------------------------------------------  -----  ----  --------------------------------------------  -------------  -----  -----
+[한국켄트외국인학교](http://www.kkfs.org )    1810     0  [1810](http://www.kkfs.org/xe/TuitionFees )   02-2201-7091   서울    1993
+
+
+---
+
+
+**[2016 KKFS GRADUATION](https://youtu.be/CPyFzkvrV1Q)**
+
+
+![](http://img.youtube.com/vi/CPyFzkvrV1Q/mqdefault.jpg) 
 
 ---
 
