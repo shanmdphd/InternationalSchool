@@ -3,7 +3,7 @@ library(dplyr)
 library(knitr)
 library(readr)
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE, message = FALSE, results = "asis")
-in
+
 Rank <- read_csv("resources/ranking.csv", col_types = cols(RANK = col_number()), locale = locale(encoding = "UTF-8"))
 Univ <- read_csv("resources/Univ.csv", locale = locale(encoding = "UTF-8"))
 
