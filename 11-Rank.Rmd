@@ -1,0 +1,101 @@
+```{r, include = FALSE, message = FALSE}
+library(dplyr)
+library(xlsx)
+library(knitr)
+library(readr)
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE, message = FALSE, results = "asis")
+
+Rank <- read_csv("~/GIT/InternationalSchool/resources/ranking.csv", col_types = cols(RANK = col_number()), locale = locale(encoding = "UTF-8"))
+Univ <- read_csv("~/GIT/InternationalSchool/resources/Univ.csv", locale = locale(encoding = "UTF-8"))
+
+# Function Match
+Match <- function(ID){
+  KableRank <- Rank %>% filter(grepl(ID, UNIV))
+  KableUniv <- UnivFinal %>% arrange(desc(ADM)) %>% filter(grepl(ID, UNIV)) %>% select(-NAVERID, -ADM, -NOTE)
+  if (dim(KableUniv)[1] != 0){
+    cat("\n**", KableRank$RANK, "위 ",KableRank$UNIV, "** / ", KableRank$COUNTRY, " / [대학교정보](", KableRank$LINK, ")\n", sep = "")
+    print(kable(KableUniv))
+    cat("\n---\n")
+  } else {
+    #cat("\n### ", KableRank$RANK, "위 ",KableRank$UNIV, " (", KableRank$COUNTRY, ")\n", sep = "")
+  }
+}
+
+# Function MatchNoNum
+MatchNoNum <- function(ID){
+  KableRank <- Rank %>% filter(grepl(ID, UNIV))
+  KableUniv <- UnivFinal %>% arrange(desc(ADM)) %>% filter(grepl(ID, UNIV)) %>% select(-NAVERID, -ADM, -NOTE)
+  if (dim(KableUniv)[1] != 0){
+    cat("\n**", KableRank$UNIV, "** / [대학교정보](", KableRank$LINK, ")\n", sep = "")
+    print(kable(KableUniv))
+    cat("\n---\n")
+  } else {
+    #cat("\n### ", KableRank$RANK, "위 ",KableRank$UNIV, " (", KableRank$COUNTRY, ")\n", sep = "")
+  }
+}
+
+# Changes
+Univ[Univ == "UCLA"] <- "University of California, Los Angeles"
+Univ[Univ == "UC Berkeley"] <- "University of California, Berkeley"
+Univ[Univ == "UC Davis"] <- "University of California, Davis"
+
+# Link
+UnivFinal <- Univ %>% mutate(ADMISSION = paste0("[", ADM, "명](http://cafe.naver.com/assarabia/", NAVERID,")"))
+
+```
+
+# 2016 대학 랭킹별 국제학교, 외국인학교의 대입결과 분석 by NeedSchool (beta)
+
+- Author: PhilDoc
+- Date: `r Sys.Date()`
+
+## Introduction
+
+- 이 분석은 `r Sys.Date()` 현재, `r paste(unique(Univ$ABBR), collapse = ", ")`의 `r length(unique(Univ$ABBR))`개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료 변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두 수집하여 분석하는 것을 목적으로 합니다. 
+
+- 현재 분석은 beta version (v0.1)로서, 니드스쿨 학부모님들의 학교에 대한 이해를 위한 비영리적 목적으로 제작되었습니다. 틈틈히 이 페이지에 접속해서 조회해 주세요.
+
+- 학교 순위는 The Times Higher Education의 [World University Ranking 2015-2016](https://www.timeshighereducation.com/world-university-rankings/2016/world-ranking) 을 기반으로 작성되었습니다. 학교 순위는 전적으로 영국의 언론사 The Times의 기준에 의해 부여된 숫자이기 때문에, 대학교의 질을 직접적으로 반영한다고 보긴 힘들다는 의견이 많습니다. 어디까지나 의사결정(decision making)을 위한 참고용으로 사용하길 추천드립니다.
+
+- ">0명"으로 표시된 숫자는 학교에서 대학교의 이름만 밝히고 몇 명의 학생이 입학허가를 받았는지 공개하지 않은 경우를 의미합니다.
+
+## HYPSMC Schools
+```{r}
+UNIVID = c("Harvard", "Yale", "Princeton", "Stanford University", "MIT", "Caltech")
+cat(paste0("\n- HYPSMC = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
+for (i in 1:length(UNIVID)){
+  MatchNoNum(UNIVID[i])
+}
+```
+
+## Ivy League Schools
+```{r}
+UNIVID = c("Harvard", "Yale", "Princeton", "Columbia University", "Dartmouth", "University of Pennsylvania", "Brown University", "Cornell University")
+cat(paste0("\n- Ivy leagues = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
+for (i in 1:length(UNIVID)){
+  MatchNoNum(UNIVID[i])
+}
+
+```
+
+
+## Ranking
+
+```{r}
+
+UNIVID = Rank$UNIV
+
+for (i in 1:length(UNIVID)){
+  Match(UNIVID[i])
+}
+
+```
+
+```{r eval = FALSE}
+Match("Stanford")
+Match("Berkeley")
+Match("Oxford")
+Match("REKWJHRKJEH") # NULL examples
+Match("University of California, Los Angeles")
+```
+

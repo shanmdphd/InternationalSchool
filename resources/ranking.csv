@@ -1,101 +1,101 @@
-RANK,UNIV,COUNTRY
-1,California Institute of Technology,United States of America
-2,University of Oxford,United Kingdom
-3,Stanford University,United States of America
-4,University of Cambridge,United Kingdom
-5,Massachusetts Institute of Technology,United States of America
-6,Harvard University,United States of America
-7,Princeton University,United States of America
-8,Imperial College London,United Kingdom
-9,ETH Zurich – Swiss Federal Institute of Technology Zurich,Switzerland
-10,University of Chicago,United States of America
-11,Johns Hopkins University,United States of America
-12,Yale University,United States of America
-13,"University of California, Berkeley",United States of America
-14,University College London,United Kingdom
-15,Columbia University,United States of America
-16,"University of California, Los Angeles",United States of America
-17,University of Pennsylvania,United States of America
-18,Cornell University,United States of America
-19,University of Toronto,Canada
-20,Duke University,United States of America
-21,University of Michigan,United States of America
-22,Carnegie Mellon University,United States of America
-23,London School of Economics and Political Science,United Kingdom
-24,University of Edinburgh,United Kingdom
-25,Northwestern University,United States of America
-26,National University of Singapore,Singapore
-27,King’s College London,United Kingdom
-28,Karolinska Institute,Sweden
-29,LMU Munich,Germany
-30,New York University,United States of America
-31,École Polytechnique Fédérale de Lausanne,Switzerland
-32,University of Washington,United States of America
-33,University of Melbourne,Australia
-34,University of British Columbia,Canada
-35,KU Leuven,Belgium
-36,University of Illinois at Urbana-Champaign,United States of America
-37,Heidelberg University,Germany
-38,McGill University,Canada
-39,"University of California, San Diego",United States of America
-39,"University of California, Santa Barbara",United States of America
-41,Georgia Institute of Technology,United States of America
-42,Peking University,China
-43,University of Tokyo,Japan
-44,"University of California, Davis",United States of America
-44,University of Hong Kong,Hong Kong
-46,University of Texas at Austin,United States of America
-47,Tsinghua University,China
-47,Wageningen University & Research,Netherlands
-49,Humboldt University of Berlin,Germany
-50,University of Wisconsin-Madison,United States of America
-51,Brown University,United States of America
-52,Australian National University,Australia
-53,Technical University of Munich,Germany
-54,École Normale Supérieure,France
-55,Nanyang Technological University,Singapore
-56,University of Manchester,United Kingdom
-56,University of Sydney,Australia
-58,University of Amsterdam,Netherlands
-59,Hong Kong University of Science and Technology,Hong Kong
-60,The University of Queensland,Australia
-60,Washington University in St Louis,United States of America
-62,Utrecht University,Netherlands
-63,University of North Carolina at Chapel Hill,United States of America
-64,Boston University,United States of America
-65,Delft University of Technology,Netherlands
-65,University of Minnesota,United States of America
-67,Leiden University,Netherlands
-68,University of Southern California,United States of America
-69,University of Bristol,United Kingdom
-70,Durham University,United Kingdom
-71,Erasmus University Rotterdam,Netherlands
-72,Free University of Berlin,Germany
-73,Monash University,Australia
-74,University of Groningen,Netherlands
-75,Pennsylvania State University,United States of America
-76,University of Glasgow,United Kingdom
-76,University of Helsinki,Finland
-78,University of Tübingen,Germany
-79,University of Pittsburgh,United States of America
-80,University of Warwick,United Kingdom
-81,Uppsala University,Sweden
-82,University of Copenhagen,Denmark
-82,University of New South Wales,Australia
-84,University of Freiburg,Germany
-85,Seoul National University,South Korea
-86,University of St Andrews,United Kingdom
-87,Vanderbilt University,United States of America
-88,Kyoto University,Japan
-88,Maastricht University,Netherlands
-90,Emory University,United States of America
-90,Lund University,Sweden
-90,Ohio State University,United States of America
-93,University of Exeter,United Kingdom
-94,University of Bonn,Germany
-94,Georgetown University,United States of America
-94,McMaster University,Canada
-97,University of Sheffield,United Kingdom
-98,Queen Mary University of London,United Kingdom
-99,University of Göttingen,Germany
-99,Michigan State University,United States of America
+RANK,UNIV,COUNTRY,LINK
+1,California Institute of Technology,United States of America,https://www.timeshighereducation.com/world-university-rankings/california-institute-technology?ranking-dataset=133819 
+2,University of Oxford,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-oxford?ranking-dataset=133819 
+3,Stanford University,United States of America,https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819 
+4,University of Cambridge,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-cambridge?ranking-dataset=133819 
+5,Massachusetts Institute of Technology,United States of America,https://www.timeshighereducation.com/world-university-rankings/massachusetts-institute-of-technology?ranking-dataset=133819 
+6,Harvard University,United States of America,https://www.timeshighereducation.com/world-university-rankings/harvard-university?ranking-dataset=133819 
+7,Princeton University,United States of America,https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819 
+8,Imperial College London,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/imperial-college-london?ranking-dataset=133819 
+9,ETH Zurich – Swiss Federal Institute of Technology Zurich,Switzerland,https://www.timeshighereducation.com/world-university-rankings/eth-zurich-swiss-federal-institute-of-technology-zurich?ranking-dataset=133819 
+10,University of Chicago,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-chicago?ranking-dataset=133819 
+11,Johns Hopkins University,United States of America,https://www.timeshighereducation.com/world-university-rankings/johns-hopkins-university?ranking-dataset=133819 
+12,Yale University,United States of America,https://www.timeshighereducation.com/world-university-rankings/yale-university?ranking-dataset=133819 
+13,"University of California, Berkeley",United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-california-berkeley?ranking-dataset=133819 
+14,University College London,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-college-london?ranking-dataset=133819 
+15,Columbia University,United States of America,https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819 
+16,"University of California, Los Angeles",United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-california-los-angeles?ranking-dataset=133819 
+17,University of Pennsylvania,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819 
+18,Cornell University,United States of America,https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819 
+19,University of Toronto,Canada,https://www.timeshighereducation.com/world-university-rankings/university-of-toronto?ranking-dataset=133819 
+20,Duke University,United States of America,https://www.timeshighereducation.com/world-university-rankings/duke-university?ranking-dataset=133819 
+21,University of Michigan,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-michigan?ranking-dataset=133819 
+22,Carnegie Mellon University,United States of America,https://www.timeshighereducation.com/world-university-rankings/carnegie-mellon-university?ranking-dataset=133819 
+23,London School of Economics and Political Science,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/london-school-of-economics-and-political-science?ranking-dataset=133819 
+24,University of Edinburgh,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-edinburgh?ranking-dataset=133819 
+25,Northwestern University,United States of America,https://www.timeshighereducation.com/world-university-rankings/northwestern-university?ranking-dataset=133819 
+26,National University of Singapore,Singapore,https://www.timeshighereducation.com/world-university-rankings/national-university-of-singapore?ranking-dataset=133819 
+27,King’s College London,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/kings-college-london?ranking-dataset=133819 
+28,Karolinska Institute,Sweden,https://www.timeshighereducation.com/world-university-rankings/karolinska-institute?ranking-dataset=133819 
+29,LMU Munich,Germany,https://www.timeshighereducation.com/world-university-rankings/ludwig-maximilians-universitat-munchen?ranking-dataset=133819 
+30,New York University,United States of America,https://www.timeshighereducation.com/world-university-rankings/new-york-university?ranking-dataset=133819 
+31,École Polytechnique Fédérale de Lausanne,Switzerland,https://www.timeshighereducation.com/world-university-rankings/ecole-polytechnique-federale-de-lausanne?ranking-dataset=133819 
+32,University of Washington,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-washington?ranking-dataset=133819 
+33,University of Melbourne,Australia,https://www.timeshighereducation.com/world-university-rankings/university-of-melbourne?ranking-dataset=133819 
+34,University of British Columbia,Canada,https://www.timeshighereducation.com/world-university-rankings/university-of-british-columbia?ranking-dataset=133819 
+35,KU Leuven,Belgium,https://www.timeshighereducation.com/world-university-rankings/katholieke-universiteit-leuven?ranking-dataset=133819 
+36,University of Illinois at Urbana-Champaign,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-illinois-at-urbana-champaign?ranking-dataset=133819 
+37,Heidelberg University,Germany,https://www.timeshighereducation.com/world-university-rankings/universitat-heidelberg?ranking-dataset=133819 
+38,McGill University,Canada,https://www.timeshighereducation.com/world-university-rankings/mcgill-university?ranking-dataset=133819 
+39,"University of California, San Diego",United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-california-san-diego?ranking-dataset=133819 
+39,"University of California, Santa Barbara",United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-california-santa-barbara?ranking-dataset=133819 
+41,Georgia Institute of Technology,United States of America,https://www.timeshighereducation.com/world-university-rankings/georgia-institute-of-technology?ranking-dataset=133819 
+42,Peking University,China,https://www.timeshighereducation.com/world-university-rankings/peking-university?ranking-dataset=133819 
+43,University of Tokyo,Japan,https://www.timeshighereducation.com/world-university-rankings/university-of-tokyo?ranking-dataset=133819 
+44,"University of California, Davis",United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-california-davis?ranking-dataset=133819 
+44,University of Hong Kong,Hong Kong,https://www.timeshighereducation.com/world-university-rankings/university-of-hong-kong?ranking-dataset=133819 
+46,University of Texas at Austin,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-texas-at-austin?ranking-dataset=133819 
+47,Tsinghua University,China,https://www.timeshighereducation.com/world-university-rankings/tsinghua-university?ranking-dataset=133819 
+47,Wageningen University & Research,Netherlands,https://www.timeshighereducation.com/world-university-rankings/wageningen-university-and-research-center?ranking-dataset=133819 
+49,Humboldt University of Berlin,Germany,https://www.timeshighereducation.com/world-university-rankings/humboldt-universitat-zu-berlin?ranking-dataset=133819 
+50,University of Wisconsin-Madison,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-wisconsin-madison?ranking-dataset=133819 
+51,Brown University,United States of America,https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819 
+52,Australian National University,Australia,https://www.timeshighereducation.com/world-university-rankings/australian-national-university?ranking-dataset=133819 
+53,Technical University of Munich,Germany,https://www.timeshighereducation.com/world-university-rankings/technische-universitat-munchen?ranking-dataset=133819 
+54,École Normale Supérieure,France,https://www.timeshighereducation.com/world-university-rankings/ecole-normale-superieure?ranking-dataset=133819 
+55,Nanyang Technological University,Singapore,https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university?ranking-dataset=133819 
+56,University of Manchester,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-manchester?ranking-dataset=133819 
+56,University of Sydney,Australia,https://www.timeshighereducation.com/world-university-rankings/university-of-sydney?ranking-dataset=133819 
+58,University of Amsterdam,Netherlands,https://www.timeshighereducation.com/world-university-rankings/university-of-amsterdam?ranking-dataset=133819 
+59,Hong Kong University of Science and Technology,Hong Kong,https://www.timeshighereducation.com/world-university-rankings/hong-kong-university-of-science-and-technology?ranking-dataset=133819 
+60,The University of Queensland,Australia,https://www.timeshighereducation.com/world-university-rankings/university-of-queensland-australia?ranking-dataset=133819 
+60,Washington University in St Louis,United States of America,https://www.timeshighereducation.com/world-university-rankings/washington-university-in-st-louis?ranking-dataset=133819 
+62,Utrecht University,Netherlands,https://www.timeshighereducation.com/world-university-rankings/utrecht-university?ranking-dataset=133819 
+63,University of North Carolina at Chapel Hill,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-north-carolina-at-chapel-hill?ranking-dataset=133819 
+64,Boston University,United States of America,https://www.timeshighereducation.com/world-university-rankings/boston-university?ranking-dataset=133819 
+65,Delft University of Technology,Netherlands,https://www.timeshighereducation.com/world-university-rankings/delft-university-of-technology?ranking-dataset=133819 
+65,University of Minnesota,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-minnesota?ranking-dataset=133819 
+67,Leiden University,Netherlands,https://www.timeshighereducation.com/world-university-rankings/leiden-university?ranking-dataset=133819 
+68,University of Southern California,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-southern-california?ranking-dataset=133819 
+69,University of Bristol,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-bristol?ranking-dataset=133819 
+70,Durham University,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/durham-university?ranking-dataset=133819 
+71,Erasmus University Rotterdam,Netherlands,https://www.timeshighereducation.com/world-university-rankings/erasmus-university-rotterdam?ranking-dataset=133819 
+72,Free University of Berlin,Germany,https://www.timeshighereducation.com/world-university-rankings/freie-universitat-berlin?ranking-dataset=133819 
+73,Monash University,Australia,https://www.timeshighereducation.com/world-university-rankings/monash-university?ranking-dataset=133819 
+74,University of Groningen,Netherlands,https://www.timeshighereducation.com/world-university-rankings/university-of-groningen?ranking-dataset=133819 
+75,Pennsylvania State University,United States of America,https://www.timeshighereducation.com/world-university-rankings/pennsylvania-state-university?ranking-dataset=133819 
+76,University of Glasgow,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-glasgow?ranking-dataset=133819 
+76,University of Helsinki,Finland,https://www.timeshighereducation.com/world-university-rankings/university-of-helsinki?ranking-dataset=133819 
+78,University of Tübingen,Germany,https://www.timeshighereducation.com/world-university-rankings/eberhard-karls-universitat-tubingen?ranking-dataset=133819 
+79,University of Pittsburgh,United States of America,https://www.timeshighereducation.com/world-university-rankings/university-of-pittsburgh?ranking-dataset=133819 
+80,University of Warwick,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-warwick?ranking-dataset=133819 
+81,Uppsala University,Sweden,https://www.timeshighereducation.com/world-university-rankings/uppsala-university?ranking-dataset=133819 
+82,University of Copenhagen,Denmark,https://www.timeshighereducation.com/world-university-rankings/university-of-copenhagen?ranking-dataset=133819 
+82,University of New South Wales,Australia,https://www.timeshighereducation.com/world-university-rankings/university-of-new-south-wales?ranking-dataset=133819 
+84,University of Freiburg,Germany,https://www.timeshighereducation.com/world-university-rankings/albert-ludwigs-universitat-freiburg?ranking-dataset=133819 
+85,Seoul National University,South Korea,https://www.timeshighereducation.com/world-university-rankings/seoul-national-university?ranking-dataset=133819 
+86,University of St Andrews,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-st-andrews?ranking-dataset=133819 
+87,Vanderbilt University,United States of America,https://www.timeshighereducation.com/world-university-rankings/vanderbilt-university?ranking-dataset=133819 
+88,Kyoto University,Japan,https://www.timeshighereducation.com/world-university-rankings/kyoto-university?ranking-dataset=133819 
+88,Maastricht University,Netherlands,https://www.timeshighereducation.com/world-university-rankings/maastricht-university?ranking-dataset=133819 
+90,Emory University,United States of America,https://www.timeshighereducation.com/world-university-rankings/emory-university?ranking-dataset=133819 
+90,Lund University,Sweden,https://www.timeshighereducation.com/world-university-rankings/lund-university?ranking-dataset=133819 
+90,Ohio State University,United States of America,https://www.timeshighereducation.com/world-university-rankings/ohio-state-university?ranking-dataset=133819 
+93,University of Exeter,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-exeter?ranking-dataset=133819 
+94,University of Bonn,Germany,https://www.timeshighereducation.com/world-university-rankings/universitat-bonn?ranking-dataset=133819 
+94,Georgetown University,United States of America,https://www.timeshighereducation.com/world-university-rankings/georgetown-university?ranking-dataset=133819 
+94,McMaster University,Canada,https://www.timeshighereducation.com/world-university-rankings/mcmaster-university?ranking-dataset=133819 
+97,University of Sheffield,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/university-of-sheffield?ranking-dataset=133819 
+98,Queen Mary University of London,United Kingdom,https://www.timeshighereducation.com/world-university-rankings/queen-mary-university-of-london?ranking-dataset=133819 
+99,University of Göttingen,Germany,https://www.timeshighereducation.com/world-university-rankings/georg-august-universitat-gottingen?ranking-dataset=133819 
+99,Michigan State University,United States of America,https://www.timeshighereducation.com/world-university-rankings/michigan-state-university?ranking-dataset=133819 

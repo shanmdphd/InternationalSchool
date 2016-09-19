@@ -24,7 +24,7 @@ html_document:
   force_captions: no
   highlight: tango
   keep_md: yes
-  number_sections: yes
+  number_sections: no
   theme: readable
   self_contained: false
   toc: no
