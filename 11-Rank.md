@@ -3,11 +3,11 @@
 # 2016 대학 랭킹별 국제학교, 외국인학교의 대입결과 분석 by NeedSchool (beta)
 
 - Author: PhilDoc
-- Date: 2016-09-19
+- Date: 2016-09-20
 
 ## Introduction
 
-- 이 분석은 2016-09-19 현재, TCIS, BFS, KIS Jeju, SIS의 4개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료 변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두 수집하여 분석하는 것을 목적으로 합니다. 
+- 이 분석은 2016-09-20 현재, TCIS, BFS, KIS Jeju, SIS, NLCS Jeju의 5개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료 변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두 수집하여 분석하는 것을 목적으로 합니다. 
 
 - 현재 분석은 beta version (v0.1)로서, 니드스쿨 학부모님들의 학교에 대한 이해를 위한 비영리적 목적으로 제작되었습니다. 틈틈히 이 페이지에 접속해서 조회해 주세요.
 
@@ -17,7 +17,7 @@
 
 ## HYPSMC Schools
 
-- HYPSMC = Harvard, Yale, Princeton, Stanford University, MIT, Caltech 
+- HYPSMC = Harvard University, Yale University, Princeton University, Stanford University, MIT, Caltech 
 
 
 **Princeton University** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819)
@@ -28,6 +28,7 @@
  2016  SIS    Princeton University   [2명](http://cafe.naver.com/assarabia/11589) 
 
 ---
+
 
 **Stanford University** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819)
 
@@ -40,7 +41,7 @@
 
 ## Ivy League Schools
 
-- Ivy leagues = Harvard, Yale, Princeton, Columbia University, Dartmouth, University of Pennsylvania, Brown University, Cornell University 
+- Ivy league schools = Harvard University, Yale University, Princeton University, Columbia University, Dartmouth University, University of Pennsylvania, Brown University, Cornell University 
 
 
 **Princeton University** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819)
@@ -52,6 +53,7 @@
 
 ---
 
+
 **Columbia University** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819)
 
 
@@ -60,6 +62,7 @@
  2016  SIS    Columbia University   [1명](http://cafe.naver.com/assarabia/11589) 
 
 ---
+
 
 **University of Pennsylvania** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819)
 
@@ -70,6 +73,7 @@
 
 ---
 
+
 **Brown University** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819)
 
 
@@ -78,6 +82,7 @@
  2016  SIS    Brown University   [2명](http://cafe.naver.com/assarabia/11589) 
 
 ---
+
 
 **Cornell University** / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819)
 
@@ -95,7 +100,17 @@
 ## Ranking
 
 
-**3위 Stanford University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819)
+**2위 University of Oxford** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-oxford?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                   ADMISSION                                     
+-----  ----------  ---------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Oxford   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**3위 Stanford University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                  ADMISSION                                    
@@ -104,7 +119,18 @@
 
 ---
 
-**7위 Princeton University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819)
+
+**4위 University of Cambridge** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-cambridge?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                      ADMISSION                                     
+-----  ----------  ------------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Cambridge   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**7위 Princeton University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                   ADMISSION                                    
@@ -113,7 +139,18 @@
 
 ---
 
-**10위 University of Chicago** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-chicago?ranking-dataset=133819)
+
+**8위 Imperial College London** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/imperial-college-london?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                      ADMISSION                                     
+-----  ----------  ------------------------  ----------------------------------------------
+ 2016  NLCS Jeju   Imperial College London   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**10위 University of Chicago** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-chicago?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                    ADMISSION                                    
@@ -122,7 +159,8 @@
 
 ---
 
-**11위 Johns Hopkins University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/johns-hopkins-university?ranking-dataset=133819)
+
+**11위 Johns Hopkins University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/johns-hopkins-university?ranking-dataset=133819)
 
 
  YEAR  ABBR       UNIV                       ADMISSION                                     
@@ -133,27 +171,32 @@
 
 ---
 
-**13위 University of California, Berkeley** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-berkeley?ranking-dataset=133819)
+
+**13위 University of California, Berkeley** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-berkeley?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                                 ADMISSION                                     
------  ---------  -----------------------------------  ----------------------------------------------
- 2016  SIS        University of California, Berkeley   [4명](http://cafe.naver.com/assarabia/11589)  
- 2016  KIS Jeju   University of California, Berkeley   [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       University of California, Berkeley   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                                 ADMISSION                                     
+-----  ----------  -----------------------------------  ----------------------------------------------
+ 2016  SIS         University of California, Berkeley   [4명](http://cafe.naver.com/assarabia/11589)  
+ 2016  KIS Jeju    University of California, Berkeley   [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        University of California, Berkeley   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of California, Berkeley   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
+
 
 **14위 University College London** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-college-london?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                        ADMISSION                                     
------  -----  --------------------------  ----------------------------------------------
- 2016  TCIS   University College London   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                        ADMISSION                                     
+-----  ----------  --------------------------  ----------------------------------------------
+ 2016  TCIS        University College London   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University College London   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**15위 Columbia University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819)
+
+**15위 Columbia University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                  ADMISSION                                    
@@ -162,19 +205,22 @@
 
 ---
 
-**16위 University of California, Los Angeles** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-los-angeles?ranking-dataset=133819)
+
+**16위 University of California, Los Angeles** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-los-angeles?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                                    ADMISSION                                     
------  ---------  --------------------------------------  ----------------------------------------------
- 2016  BFS        University of California, Los Angeles   [2명](http://cafe.naver.com/assarabia/11597)  
- 2016  KIS Jeju   University of California, Los Angeles   [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  SIS        University of California, Los Angeles   [1명](http://cafe.naver.com/assarabia/11589)  
- 2016  TCIS       University of California, Los Angeles   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                                    ADMISSION                                     
+-----  ----------  --------------------------------------  ----------------------------------------------
+ 2016  BFS         University of California, Los Angeles   [2명](http://cafe.naver.com/assarabia/11597)  
+ 2016  KIS Jeju    University of California, Los Angeles   [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  SIS         University of California, Los Angeles   [1명](http://cafe.naver.com/assarabia/11589)  
+ 2016  TCIS        University of California, Los Angeles   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of California, Los Angeles   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**17위 University of Pennsylvania** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819)
+
+**17위 University of Pennsylvania** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                         ADMISSION                                    
@@ -183,7 +229,8 @@
 
 ---
 
-**18위 Cornell University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819)
+
+**18위 Cornell University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819)
 
 
  YEAR  ABBR       UNIV                 ADMISSION                                     
@@ -195,47 +242,66 @@
 
 ---
 
+
 **19위 University of Toronto** / Canada / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-toronto?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                        ADMISSION                                     
------  -----  --------------------------  ----------------------------------------------
- 2016  BFS    University of Toronto, CA   [2명](http://cafe.naver.com/assarabia/11597)  
- 2016  TCIS   University of Toronto       [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                        ADMISSION                                     
+-----  ----------  --------------------------  ----------------------------------------------
+ 2016  BFS         University of Toronto, CA   [2명](http://cafe.naver.com/assarabia/11597)  
+ 2016  TCIS        University of Toronto       [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of Toronto       [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**20위 Duke University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/duke-university?ranking-dataset=133819)
+
+**20위 Duke University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/duke-university?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV              ADMISSION                                     
------  -----  ----------------  ----------------------------------------------
- 2016  SIS    Duke University   [3명](http://cafe.naver.com/assarabia/11589)  
- 2016  TCIS   Duke University   [>0명](http://cafe.naver.com/assarabia/11598) 
-
----
-
-**21위 University of Michigan** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-michigan?ranking-dataset=133819)
-
-
- YEAR  ABBR       UNIV                     ADMISSION                                     
------  ---------  -----------------------  ----------------------------------------------
- 2016  KIS Jeju   University of Michigan   [2명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       University of Michigan   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV              ADMISSION                                     
+-----  ----------  ----------------  ----------------------------------------------
+ 2016  SIS         Duke University   [3명](http://cafe.naver.com/assarabia/11589)  
+ 2016  TCIS        Duke University   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   Duke University   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**22위 Carnegie Mellon University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/carnegie-mellon-university?ranking-dataset=133819)
+
+**21위 University of Michigan** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-michigan?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                         ADMISSION                                     
------  -----  ---------------------------  ----------------------------------------------
- 2016  SIS    Carnegie Mellon University   [3명](http://cafe.naver.com/assarabia/11589)  
- 2016  TCIS   Carnegie Mellon University   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                     ADMISSION                                     
+-----  ----------  -----------------------  ----------------------------------------------
+ 2016  KIS Jeju    University of Michigan   [2명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        University of Michigan   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of Michigan   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**25위 Northwestern University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/northwestern-university?ranking-dataset=133819)
+
+**22위 Carnegie Mellon University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/carnegie-mellon-university?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                         ADMISSION                                     
+-----  ----------  ---------------------------  ----------------------------------------------
+ 2016  SIS         Carnegie Mellon University   [3명](http://cafe.naver.com/assarabia/11589)  
+ 2016  TCIS        Carnegie Mellon University   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   Carnegie Mellon University   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**24위 University of Edinburgh** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-edinburgh?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                      ADMISSION                                     
+-----  ----------  ------------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Edinburgh   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**25위 Northwestern University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/northwestern-university?ranking-dataset=133819)
 
 
  YEAR  ABBR       UNIV                      ADMISSION                                     
@@ -246,19 +312,22 @@
 
 ---
 
-**30위 New York University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/new-york-university?ranking-dataset=133819)
+
+**30위 New York University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/new-york-university?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                      ADMISSION                                     
------  ---------  ------------------------  ----------------------------------------------
- 2016  KIS Jeju   New York University       [3명](http://cafe.naver.com/assarabia/11596)  
- 2016  SIS        New York University       [17명](http://cafe.naver.com/assarabia/11589) 
- 2016  BFS        New York University,NYU   [1명](http://cafe.naver.com/assarabia/11597)  
- 2016  TCIS       New York University       [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                      ADMISSION                                     
+-----  ----------  ------------------------  ----------------------------------------------
+ 2016  KIS Jeju    New York University       [3명](http://cafe.naver.com/assarabia/11596)  
+ 2016  SIS         New York University       [17명](http://cafe.naver.com/assarabia/11589) 
+ 2016  BFS         New York University,NYU   [1명](http://cafe.naver.com/assarabia/11597)  
+ 2016  TCIS        New York University       [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   New York University       [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**32위 University of Washington** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-washington?ranking-dataset=133819)
+
+**32위 University of Washington** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-washington?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                       ADMISSION                                     
@@ -268,24 +337,39 @@
 
 ---
 
+
+**33위 University of Melbourne** / Australia / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-melbourne?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                          ADMISSION                                     
+-----  ----------  ----------------------------  ----------------------------------------------
+ 2016  NLCS Jeju   The University of Melbourne   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
 **34위 University of British Columbia** / Canada / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-british-columbia?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                             ADMISSION                                     
------  -----  -------------------------------  ----------------------------------------------
- 2016  BFS    University of British Columbia   [5명](http://cafe.naver.com/assarabia/11597)  
- 2016  TCIS   University of British Columbia   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                             ADMISSION                                     
+-----  ----------  -------------------------------  ----------------------------------------------
+ 2016  BFS         University of British Columbia   [5명](http://cafe.naver.com/assarabia/11597)  
+ 2016  TCIS        University of British Columbia   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of British Columbia   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**36위 University of Illinois at Urbana-Champaign** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-illinois-at-urbana-champaign?ranking-dataset=133819)
+
+**36위 University of Illinois at Urbana-Champaign** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-illinois-at-urbana-champaign?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                                         ADMISSION                                     
------  -----  -------------------------------------------  ----------------------------------------------
- 2016  TCIS   University of Illinois at Urbana-Champaign   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                                         ADMISSION                                     
+-----  ----------  -------------------------------------------  ----------------------------------------------
+ 2016  TCIS        University of Illinois at Urbana-Champaign   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of Illinois at Urbana-Champaign   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
+
 
 **38위 McGill University** / Canada / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/mcgill-university?ranking-dataset=133819)
 
@@ -298,29 +382,34 @@
 
 ---
 
-**39위 University of California, San Diego** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-san-diego?ranking-dataset=133819)
+
+**39위 University of California, San Diego** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-san-diego?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                                  ADMISSION                                     
------  ---------  ------------------------------------  ----------------------------------------------
- 2016  BFS        University of California, San Diego   [5명](http://cafe.naver.com/assarabia/11597)  
- 2016  KIS Jeju   University of California, San Diego   [4명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       University of California, San Diego   [>0명](http://cafe.naver.com/assarabia/11598) 
-
----
-
-**39위 University of California, Santa Barbara** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-santa-barbara?ranking-dataset=133819)
-
-
- YEAR  ABBR       UNIV                                      ADMISSION                                     
------  ---------  ----------------------------------------  ----------------------------------------------
- 2016  KIS Jeju   University of California, Santa Barbara   [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  KIS Jeju   University of California, Santa Barbara   [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       University of California, Santa Barbara   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                                  ADMISSION                                     
+-----  ----------  ------------------------------------  ----------------------------------------------
+ 2016  BFS         University of California, San Diego   [5명](http://cafe.naver.com/assarabia/11597)  
+ 2016  KIS Jeju    University of California, San Diego   [4명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        University of California, San Diego   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of California, San Diego   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**41위 Georgia Institute of Technology** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/georgia-institute-of-technology?ranking-dataset=133819)
+
+**39위 University of California, Santa Barbara** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-santa-barbara?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                                      ADMISSION                                     
+-----  ----------  ----------------------------------------  ----------------------------------------------
+ 2016  KIS Jeju    University of California, Santa Barbara   [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  KIS Jeju    University of California, Santa Barbara   [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        University of California, Santa Barbara   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of California, Santa Barbara   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**41위 Georgia Institute of Technology** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/georgia-institute-of-technology?ranking-dataset=133819)
 
 
  YEAR  ABBR       UNIV                              ADMISSION                                     
@@ -331,34 +420,40 @@
 
 ---
 
-**44위 University of California, Davis** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-davis?ranking-dataset=133819)
+
+**44위 University of California, Davis** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-california-davis?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                              ADMISSION                                     
------  ---------  --------------------------------  ----------------------------------------------
- 2016  KIS Jeju   University of California, Davis   [7명](http://cafe.naver.com/assarabia/11596)  
- 2016  BFS        University of California, Davis   [1명](http://cafe.naver.com/assarabia/11597)  
- 2016  SIS        University of California, Davis   [1명](http://cafe.naver.com/assarabia/11589)  
- 2016  TCIS       University of California, Davis   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                              ADMISSION                                     
+-----  ----------  --------------------------------  ----------------------------------------------
+ 2016  KIS Jeju    University of California, Davis   [7명](http://cafe.naver.com/assarabia/11596)  
+ 2016  BFS         University of California, Davis   [1명](http://cafe.naver.com/assarabia/11597)  
+ 2016  SIS         University of California, Davis   [1명](http://cafe.naver.com/assarabia/11589)  
+ 2016  TCIS        University of California, Davis   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of California, Davis   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
+
 
 **44위 University of Hong Kong** / Hong Kong / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-hong-kong?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                                  ADMISSION                                     
------  ---------  ------------------------------------  ----------------------------------------------
- 2016  SIS        University of Hong Kong               [4명](http://cafe.naver.com/assarabia/11589)  
- 2016  KIS Jeju   City University of Hong Kong          [2명](http://cafe.naver.com/assarabia/11596)  
- 2016  BFS        University of Hong Kong, HK           [1명](http://cafe.naver.com/assarabia/11597)  
- 2016  KIS Jeju   University of Hong Kong               [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       City University of Hong Kong          [>0명](http://cafe.naver.com/assarabia/11598) 
- 2016  TCIS       The Chinese University of Hong Kong   [>0명](http://cafe.naver.com/assarabia/11598) 
- 2016  TCIS       University of Hong Kong               [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                                  ADMISSION                                     
+-----  ----------  ------------------------------------  ----------------------------------------------
+ 2016  SIS         University of Hong Kong               [4명](http://cafe.naver.com/assarabia/11589)  
+ 2016  KIS Jeju    City University of Hong Kong          [2명](http://cafe.naver.com/assarabia/11596)  
+ 2016  BFS         University of Hong Kong, HK           [1명](http://cafe.naver.com/assarabia/11597)  
+ 2016  KIS Jeju    University of Hong Kong               [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        City University of Hong Kong          [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  TCIS        The Chinese University of Hong Kong   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  TCIS        University of Hong Kong               [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   The Chinese University of Hong Kong   [>0명](http://cafe.naver.com/assarabia/11592) 
+ 2016  NLCS Jeju   University of Hong Kong               [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**50위 University of Wisconsin-Madison** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-wisconsin-madison?ranking-dataset=133819)
+
+**50위 University of Wisconsin-Madison** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-wisconsin-madison?ranking-dataset=133819)
 
 
  YEAR  ABBR       UNIV                              ADMISSION                                    
@@ -367,7 +462,8 @@
 
 ---
 
-**51위 Brown University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819)
+
+**51위 Brown University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV               ADMISSION                                    
@@ -375,6 +471,7 @@
  2016  SIS    Brown University   [2명](http://cafe.naver.com/assarabia/11589) 
 
 ---
+
 
 **52위 Australian National University** / Australia / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/australian-national-university?ranking-dataset=133819)
 
@@ -385,6 +482,7 @@
 
 ---
 
+
 **55위 Nanyang Technological University** / Singapore / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university?ranking-dataset=133819)
 
 
@@ -394,14 +492,17 @@
 
 ---
 
+
 **56위 University of Manchester** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-manchester?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                       ADMISSION                                     
------  -----  -------------------------  ----------------------------------------------
- 2016  TCIS   University of Manchester   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                       ADMISSION                                     
+-----  ----------  -------------------------  ----------------------------------------------
+ 2016  TCIS        University of Manchester   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of Manchester   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
+
 
 **59위 Hong Kong University of Science and Technology** / Hong Kong / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/hong-kong-university-of-science-and-technology?ranking-dataset=133819)
 
@@ -413,19 +514,22 @@
 
 ---
 
-**64위 Boston University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/boston-university?ranking-dataset=133819)
+
+**64위 Boston University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/boston-university?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                ADMISSION                                     
------  ---------  ------------------  ----------------------------------------------
- 2016  BFS        Boston University   [2명](http://cafe.naver.com/assarabia/11597)  
- 2016  SIS        Boston University   [2명](http://cafe.naver.com/assarabia/11589)  
- 2016  KIS Jeju   Boston University   [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       Boston University   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                ADMISSION                                     
+-----  ----------  ------------------  ----------------------------------------------
+ 2016  BFS         Boston University   [2명](http://cafe.naver.com/assarabia/11597)  
+ 2016  SIS         Boston University   [2명](http://cafe.naver.com/assarabia/11589)  
+ 2016  KIS Jeju    Boston University   [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        Boston University   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   Boston University   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**65위 University of Minnesota** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-minnesota?ranking-dataset=133819)
+
+**65위 University of Minnesota** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-minnesota?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                                   ADMISSION                                     
@@ -435,16 +539,39 @@
 
 ---
 
-**68위 University of Southern California** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-southern-california?ranking-dataset=133819)
+
+**68위 University of Southern California** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-southern-california?ranking-dataset=133819)
 
 
- YEAR  ABBR       UNIV                                ADMISSION                                     
------  ---------  ----------------------------------  ----------------------------------------------
- 2016  BFS        University of Southern California   [1명](http://cafe.naver.com/assarabia/11597)  
- 2016  KIS Jeju   University of Southern California   [1명](http://cafe.naver.com/assarabia/11596)  
- 2016  TCIS       University of Southern California   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                                ADMISSION                                     
+-----  ----------  ----------------------------------  ----------------------------------------------
+ 2016  BFS         University of Southern California   [1명](http://cafe.naver.com/assarabia/11597)  
+ 2016  KIS Jeju    University of Southern California   [1명](http://cafe.naver.com/assarabia/11596)  
+ 2016  TCIS        University of Southern California   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of Southern California   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
+
+
+**69위 University of Bristol** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-bristol?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                    ADMISSION                                     
+-----  ----------  ----------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Bristol   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**70위 Durham University** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/durham-university?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                ADMISSION                                     
+-----  ----------  ------------------  ----------------------------------------------
+ 2016  NLCS Jeju   Durham University   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
 
 **74위 University of Groningen** / Netherlands / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-groningen?ranking-dataset=133819)
 
@@ -455,25 +582,60 @@
 
 ---
 
-**75위 Pennsylvania State University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/pennsylvania-state-university?ranking-dataset=133819)
+
+**75위 Pennsylvania State University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/pennsylvania-state-university?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                            ADMISSION                                     
------  -----  ------------------------------  ----------------------------------------------
- 2016  TCIS   Pennsylvania State University   [>0명](http://cafe.naver.com/assarabia/11598) 
-
----
-
-**90위 Emory University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/emory-university?ranking-dataset=133819)
-
-
- YEAR  ABBR   UNIV               ADMISSION                                    
------  -----  -----------------  ---------------------------------------------
- 2016  SIS    Emory University   [1명](http://cafe.naver.com/assarabia/11589) 
+ YEAR  ABBR        UNIV                            ADMISSION                                     
+-----  ----------  ------------------------------  ----------------------------------------------
+ 2016  TCIS        Pennsylvania State University   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   Pennsylvania State University   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
 
-**90위 Ohio State University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/ohio-state-university?ranking-dataset=133819)
+
+**76위 University of Glasgow** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-glasgow?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                    ADMISSION                                     
+-----  ----------  ----------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Glasgow   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**80위 University of Warwick** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-warwick?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                    ADMISSION                                     
+-----  ----------  ----------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Warwick   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**85위 Seoul National University** / South Korea / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/seoul-national-university?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                        ADMISSION                                     
+-----  ----------  --------------------------  ----------------------------------------------
+ 2016  NLCS Jeju   Seoul National University   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**90위 Emory University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/emory-university?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV               ADMISSION                                     
+-----  ----------  -----------------  ----------------------------------------------
+ 2016  SIS         Emory University   [1명](http://cafe.naver.com/assarabia/11589)  
+ 2016  NLCS Jeju   Emory University   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**90위 Ohio State University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/ohio-state-university?ranking-dataset=133819)
 
 
  YEAR  ABBR       UNIV                        ADMISSION                                     
@@ -483,7 +645,18 @@
 
 ---
 
-**94위 Georgetown University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/georgetown-university?ranking-dataset=133819)
+
+**93위 University of Exeter** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-exeter?ranking-dataset=133819)
+
+
+ YEAR  ABBR        UNIV                   ADMISSION                                     
+-----  ----------  ---------------------  ----------------------------------------------
+ 2016  NLCS Jeju   University of Exeter   [>0명](http://cafe.naver.com/assarabia/11592) 
+
+---
+
+
+**94위 Georgetown University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/georgetown-university?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                    ADMISSION                                    
@@ -491,6 +664,7 @@
  2016  SIS    Georgetown University   [1명](http://cafe.naver.com/assarabia/11589) 
 
 ---
+
 
 **94위 McMaster University** / Canada / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/mcmaster-university?ranking-dataset=133819)
 
@@ -501,14 +675,17 @@
 
 ---
 
+
 **97위 University of Sheffield** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/university-of-sheffield?ranking-dataset=133819)
 
 
- YEAR  ABBR   UNIV                      ADMISSION                                     
------  -----  ------------------------  ----------------------------------------------
- 2016  TCIS   University of Sheffield   [>0명](http://cafe.naver.com/assarabia/11598) 
+ YEAR  ABBR        UNIV                      ADMISSION                                     
+-----  ----------  ------------------------  ----------------------------------------------
+ 2016  TCIS        University of Sheffield   [>0명](http://cafe.naver.com/assarabia/11598) 
+ 2016  NLCS Jeju   University of Sheffield   [>0명](http://cafe.naver.com/assarabia/11592) 
 
 ---
+
 
 **98위 Queen Mary University of London** / United Kingdom / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/queen-mary-university-of-london?ranking-dataset=133819)
 
@@ -519,7 +696,8 @@
 
 ---
 
-**99위 Michigan State University** / United States of America / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/michigan-state-university?ranking-dataset=133819)
+
+**99위 Michigan State University** / USA / [대학교정보](https://www.timeshighereducation.com/world-university-rankings/michigan-state-university?ranking-dataset=133819)
 
 
  YEAR  ABBR   UNIV                        ADMISSION                                     

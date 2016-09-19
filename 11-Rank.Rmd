@@ -1,12 +1,11 @@
 ```{r, include = FALSE, message = FALSE}
 library(dplyr)
-library(xlsx)
 library(knitr)
 library(readr)
 knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = FALSE, message = FALSE, results = "asis")
-
-Rank <- read_csv("~/GIT/InternationalSchool/resources/ranking.csv", col_types = cols(RANK = col_number()), locale = locale(encoding = "UTF-8"))
-Univ <- read_csv("~/GIT/InternationalSchool/resources/Univ.csv", locale = locale(encoding = "UTF-8"))
+in
+Rank <- read_csv("resources/ranking.csv", col_types = cols(RANK = col_number()), locale = locale(encoding = "UTF-8"))
+Univ <- read_csv("resources/Univ.csv", locale = locale(encoding = "UTF-8"))
 
 # Function Match
 Match <- function(ID){
@@ -15,7 +14,7 @@ Match <- function(ID){
   if (dim(KableUniv)[1] != 0){
     cat("\n**", KableRank$RANK, "위 ",KableRank$UNIV, "** / ", KableRank$COUNTRY, " / [대학교정보](", KableRank$LINK, ")\n", sep = "")
     print(kable(KableUniv))
-    cat("\n---\n")
+    cat("\n---\n\n")
   } else {
     #cat("\n### ", KableRank$RANK, "위 ",KableRank$UNIV, " (", KableRank$COUNTRY, ")\n", sep = "")
   }
@@ -28,7 +27,7 @@ MatchNoNum <- function(ID){
   if (dim(KableUniv)[1] != 0){
     cat("\n**", KableRank$UNIV, "** / [대학교정보](", KableRank$LINK, ")\n", sep = "")
     print(kable(KableUniv))
-    cat("\n---\n")
+    cat("\n---\n\n")
   } else {
     #cat("\n### ", KableRank$RANK, "위 ",KableRank$UNIV, " (", KableRank$COUNTRY, ")\n", sep = "")
   }
@@ -38,6 +37,8 @@ MatchNoNum <- function(ID){
 Univ[Univ == "UCLA"] <- "University of California, Los Angeles"
 Univ[Univ == "UC Berkeley"] <- "University of California, Berkeley"
 Univ[Univ == "UC Davis"] <- "University of California, Davis"
+Rank[Rank == "United States of America"] <- "USA"
+#unique(Rank$COUNTRY)
 
 # Link
 UnivFinal <- Univ %>% mutate(ADMISSION = paste0("[", ADM, "명](http://cafe.naver.com/assarabia/", NAVERID,")"))
@@ -61,7 +62,7 @@ UnivFinal <- Univ %>% mutate(ADMISSION = paste0("[", ADM, "명](http://cafe.nave
 
 ## HYPSMC Schools
 ```{r}
-UNIVID = c("Harvard", "Yale", "Princeton", "Stanford University", "MIT", "Caltech")
+UNIVID = c("Harvard University", "Yale University", "Princeton University", "Stanford University", "MIT", "Caltech")
 cat(paste0("\n- HYPSMC = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
 for (i in 1:length(UNIVID)){
   MatchNoNum(UNIVID[i])
@@ -70,8 +71,8 @@ for (i in 1:length(UNIVID)){
 
 ## Ivy League Schools
 ```{r}
-UNIVID = c("Harvard", "Yale", "Princeton", "Columbia University", "Dartmouth", "University of Pennsylvania", "Brown University", "Cornell University")
-cat(paste0("\n- Ivy leagues = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
+UNIVID = c("Harvard University", "Yale University", "Princeton University", "Columbia University", "Dartmouth University", "University of Pennsylvania", "Brown University", "Cornell University")
+cat(paste0("\n- Ivy league schools = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
 for (i in 1:length(UNIVID)){
   MatchNoNum(UNIVID[i])
 }
