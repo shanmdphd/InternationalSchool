@@ -1,3 +1,8 @@
+---
+fontsize: 13pt
+geometry: margin=1in
+---
+
 ```{r, include = FALSE, message = FALSE}
 library(dplyr)
 library(knitr)
@@ -8,26 +13,27 @@ Rank <- read_csv("resources/ranking.csv", col_types = cols(RANK = col_number()),
 Univ <- read_csv("resources/Univ.csv", locale = locale(encoding = "UTF-8"))
 
 # Function Match
-Match <- function(ID){
+Match <- function(ID, NoNum){
   KableRank <- Rank %>% filter(grepl(ID, UNIV))
   KableUniv <- UnivFinal %>% arrange(desc(ADM)) %>% filter(grepl(ID, UNIV)) %>% select(-NAVERID, -ADM, -NOTE)
+  
+# Only print if existing
   if (dim(KableUniv)[1] != 0){
-    cat("\n**", KableRank$RANK, "위 ",KableRank$UNIV, "** / ", KableRank$COUNTRY, " / [대학교정보](", KableRank$LINK, ")\n", sep = "")
-    print(kable(KableUniv))
-    cat("\n---\n\n")
-  } else {
-    #cat("\n### ", KableRank$RANK, "위 ",KableRank$UNIV, " (", KableRank$COUNTRY, ")\n", sep = "")
-  }
-}
-
-# Function MatchNoNum
-MatchNoNum <- function(ID){
-  KableRank <- Rank %>% filter(grepl(ID, UNIV))
-  KableUniv <- UnivFinal %>% arrange(desc(ADM)) %>% filter(grepl(ID, UNIV)) %>% select(-NAVERID, -ADM, -NOTE)
-  if (dim(KableUniv)[1] != 0){
-    cat("\n**", KableRank$UNIV, "** / [대학교정보](", KableRank$LINK, ")\n", sep = "")
-    print(kable(KableUniv))
-    cat("\n---\n\n")
+    
+    # Test No Number Printing
+    if (NoNum == FALSE){
+      cat("\n**", KableRank$RANK, "위 ",KableRank$UNIV, "** / ", KableRank$COUNTRY, " / [대학교정보](", KableRank$LINK, ") / [Google 검색](", paste0('http://www.google.com/search?q=', gsub(' ','+',KableRank$UNIV)), ")\n\n총 학생수: ", KableRank$Students, ", 학생-교수 비율: ", KableRank$SSRatio, ", 외국인 학생 수: ", KableRank$IntlStudent, ", 여:남 성비: ", KableRank$FMRatio,sep = "")
+    } else {
+      cat("\n**", KableRank$UNIV, "** / [대학교정보](", KableRank$LINK, ") / [Google 검색](", paste0('http://www.google.com/search?q=', gsub(' ','+',KableRank$UNIV)), ")\n\n총 학생수: ", KableRank$Students, ", 학생-교수 비율: ", KableRank$SSRatio, ", 외국인 학생 수: ", KableRank$IntlStudent, ", 여:남 성비: ", KableRank$FMRatio, sep = "")
+    }
+    Col.names <- colnames(KableUniv)
+    Col.names[Col.names == "YEAR"] <- "졸업년" 
+    Col.names[Col.names == "ABBR"] <- "학교명" 
+    Col.names[Col.names == "UNIV"] <- "대학교" 
+    Col.names[Col.names == "ADMISSION"] <- "합격인원" 
+    # kable(KableRank, col.names = NA)
+    print(kable(KableUniv, col.names = Col.names))
+    cat("\n\n\n")
   } else {
     #cat("\n### ", KableRank$RANK, "위 ",KableRank$UNIV, " (", KableRank$COUNTRY, ")\n", sep = "")
   }
@@ -53,28 +59,26 @@ UnivFinal <- Univ %>% mutate(ADMISSION = paste0("[", ADM, "명](http://cafe.nave
 ## Introduction
 
 - 이 분석은 `r Sys.Date()` 현재, `r paste(unique(Univ$ABBR), collapse = ", ")`의 `r length(unique(Univ$ABBR))`개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료 변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두 수집하여 분석하는 것을 목적으로 합니다. 
-
 - 현재 분석은 beta version (v0.1)로서, 니드스쿨 학부모님들의 학교에 대한 이해를 위한 비영리적 목적으로 제작되었습니다. 틈틈히 이 페이지에 접속해서 조회해 주세요.
-
 - 학교 순위는 The Times Higher Education의 [World University Ranking 2015-2016](https://www.timeshighereducation.com/world-university-rankings/2016/world-ranking) 을 기반으로 작성되었습니다. 학교 순위는 전적으로 영국의 언론사 The Times의 기준에 의해 부여된 숫자이기 때문에, 대학교의 질을 직접적으로 반영한다고 보긴 힘들다는 의견이 많습니다. 어디까지나 의사결정(decision making)을 위한 참고용으로 사용하길 추천드립니다.
-
 - ">0명"으로 표시된 숫자는 학교에서 대학교의 이름만 밝히고 몇 명의 학생이 입학허가를 받았는지 공개하지 않은 경우를 의미합니다.
+- ">1명"으로 표시된 숫자는 학교에서 복수의 합격자가 있다고 보고한 경우입니다.
 
-## HYPSMC Schools
+## HYPSMC 대학교
 ```{r}
 UNIVID = c("Harvard University", "Yale University", "Princeton University", "Stanford University", "MIT", "Caltech")
-cat(paste0("\n- HYPSMC = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
+cat(paste0("\n- HYPSMC 대학교란 미국 최상위 대학의 앞글자를 따서 지은 약어로, ",paste(unique(UNIVID), collapse = ", ")), "를 의미합니다.\n\n")
 for (i in 1:length(UNIVID)){
-  MatchNoNum(UNIVID[i])
+  Match(UNIVID[i], TRUE)
 }
 ```
 
-## Ivy League Schools
+## 아이비리그 
 ```{r}
-UNIVID = c("Harvard University", "Yale University", "Princeton University", "Columbia University", "Dartmouth University", "University of Pennsylvania", "Brown University", "Cornell University")
-cat(paste0("\n- Ivy league schools = ",paste(unique(UNIVID), collapse = ", ")), "\n\n")
+UNIVID = c("Harvard University", "Yale University", "Princeton University", "Columbia University", "Dartmouth", "University of Pennsylvania", "Brown University", "Cornell University")
+cat(paste0("\n- Ivy league schools 이란 ",paste(unique(UNIVID), collapse = ", ")), " 학교를 지칭합니다.\n\n")
 for (i in 1:length(UNIVID)){
-  MatchNoNum(UNIVID[i])
+  Match(UNIVID[i], TRUE)
 }
 
 ```
@@ -87,7 +91,7 @@ for (i in 1:length(UNIVID)){
 UNIVID = Rank$UNIV
 
 for (i in 1:length(UNIVID)){
-  Match(UNIVID[i])
+  Match(UNIVID[i], FALSE)
 }
 
 ```

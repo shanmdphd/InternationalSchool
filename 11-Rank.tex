@@ -1,0 +1,1531 @@
+\documentclass[13pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{}
+  \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+  \author{}
+  \preauthor{}\postauthor{}
+  \date{}
+  \predate{}\postdate{}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{framed,color}
+\usepackage{kotex}
+
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+\ifxetex
+\usepackage{letltxmacro}
+\setlength{\XeTeXLinkMargin}{1pt}
+\LetLtxMacro\SavedIncludeGraphics\includegraphics
+\def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+\IncludeGraphicsAux{#1}%
+}%
+\newcommand*{\IncludeGraphicsAux}[2]{%
+  \XeTeXLinkBox{%
+    \SavedIncludeGraphics#1{#2}%
+  }%
+}%
+\fi
+
+\newenvironment{rmdblock}[1]
+{\begin{shaded*}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{
+    \raisebox{-.7\height}[0pt][0pt]{
+      {\setkeys{Gin}{width=3em,keepaspectratio}\includegraphics{images/#1}}
+      }
+      }
+      \item
+    }
+    {
+      \end{itemize}
+      \end{shaded*}
+    }
+    \newenvironment{rmdnote}
+    {\begin{rmdblock}{note}}
+    {\end{rmdblock}}
+    \newenvironment{rmdcaution}
+    {\begin{rmdblock}{caution}}
+    {\end{rmdblock}}
+    \newenvironment{rmdimportant}
+    {\begin{rmdblock}{important}}
+    {\end{rmdblock}}
+    \newenvironment{rmdtip}
+    {\begin{rmdblock}{tip}}
+    {\end{rmdblock}}
+    \newenvironment{rmdwarning}
+    {\begin{rmdblock}{warning}}
+    {\end{rmdblock}}
+
+\begin{document}
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\section{2016 대학 랭킹별 국제학교, 외국인학교의 대입결과 분석 by
+NeedSchool (beta)}\label{------by-needschool-beta}
+
+\begin{itemize}
+\tightlist
+\item
+  Author: PhilDoc
+\item
+  Date: 2016-09-21
+\end{itemize}
+
+\subsection{Introduction}\label{introduction}
+
+\begin{itemize}
+\tightlist
+\item
+  이 분석은 2016-09-21 현재, TCIS, BFS, KIS Jeju, SIS, NLCS Jeju, DIS의
+  6개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료
+  변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두
+  수집하여 분석하는 것을 목적으로 합니다.
+\item
+  현재 분석은 beta version (v0.1)로서, 니드스쿨 학부모님들의 학교에 대한
+  이해를 위한 비영리적 목적으로 제작되었습니다. 틈틈히 이 페이지에
+  접속해서 조회해 주세요.
+\item
+  학교 순위는 The Times Higher Education의
+  \href{https://www.timeshighereducation.com/world-university-rankings/2016/world-ranking}{World
+  University Ranking 2015-2016} 을 기반으로 작성되었습니다. 학교 순위는
+  전적으로 영국의 언론사 The Times의 기준에 의해 부여된 숫자이기 때문에,
+  대학교의 질을 직접적으로 반영한다고 보긴 힘들다는 의견이 많습니다.
+  어디까지나 의사결정(decision making)을 위한 참고용으로 사용하길
+  추천드립니다.
+\item
+  ``\textgreater{}0명''으로 표시된 숫자는 학교에서 대학교의 이름만
+  밝히고 몇 명의 학생이 입학허가를 받았는지 공개하지 않은 경우를
+  의미합니다.
+\item
+  ``\textgreater{}1명''으로 표시된 숫자는 학교에서 복수의 합격자가
+  있다고 보고한 경우입니다.
+\end{itemize}
+
+\subsection{HYPSMC 대학교}\label{hypsmc-}
+
+\begin{itemize}
+\tightlist
+\item
+  HYPSMC 대학교란 미국 최상위 대학의 앞글자를 따서 지은 약어로, Harvard
+  University, Yale University, Princeton University, Stanford
+  University, MIT, Caltech 를 의미합니다.
+\end{itemize}
+
+\textbf{Princeton University} /
+\href{https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Princeton+University}{Google
+검색}
+
+총 학생수: 7929, 학생-교수 비율: 8.4, 외국인 학생 수: 27\%, 여:남 성비:
+45 : 55
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Princeton University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Stanford University} /
+\href{https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Stanford+University}{Google 검색}
+
+총 학생수: 15596, 학생-교수 비율: 7.8, 외국인 학생 수: 22\%, 여:남 성비:
+42 : 58
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Stanford University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+2016 & DIS & Stanford University &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{아이비리그}
+
+\begin{itemize}
+\tightlist
+\item
+  Ivy league schools 이란 Harvard University, Yale University, Princeton
+  University, Columbia University, Dartmouth, University of
+  Pennsylvania, Brown University, Cornell University 학교를 지칭합니다.
+\end{itemize}
+
+\textbf{Princeton University} /
+\href{https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Princeton+University}{Google
+검색}
+
+총 학생수: 7929, 학생-교수 비율: 8.4, 외국인 학생 수: 27\%, 여:남 성비:
+45 : 55
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Princeton University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Columbia University} /
+\href{https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Columbia+University}{Google 검색}
+
+총 학생수: 25055, 학생-교수 비율: 5.9, 외국인 학생 수: 28\%, 여:남 성비:
+NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Columbia University &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Dartmouth College} /
+\href{https://www.timeshighereducation.com/world-university-rankings/dartmouth-college?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Dartmouth+College}{Google 검색}
+
+총 학생수: 6178, 학생-교수 비율: 6.6, 외국인 학생 수: 16\%, 여:남 성비:
+47 : 53
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & Dartmouth College &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{University of Pennsylvania} /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+Pennsylvania}{Google
+검색}
+
+총 학생수: 20376, 학생-교수 비율: 6.5, 외국인 학생 수: 20\%, 여:남 성비:
+51 : 49
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & University of Pennsylvania &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & DIS & University of Pennsylvania &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Brown University} /
+\href{https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Brown+University}{Google 검색}
+
+총 학생수: 8653, 학생-교수 비율: 10.1, 외국인 학생 수: 19\%, 여:남 성비:
+NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Brown University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Cornell University} /
+\href{https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Cornell+University}{Google 검색}
+
+총 학생수: 21424, 학생-교수 비율: 10.2, 외국인 학생 수: 19\%, 여:남
+성비: 48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Cornell University &
+\href{http://cafe.naver.com/assarabia/11589}{8명}\tabularnewline
+2016 & BFS & Cornell University &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & KIS Jeju & Cornell University &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & TCIS & Cornell University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{Ranking}\label{ranking}
+
+\textbf{2위 University of Oxford} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-oxford?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Oxford}{Google
+검색}
+
+총 학생수: 19919, 학생-교수 비율: 11.6, 외국인 학생 수: 34\%, 여:남
+성비: 46 : 54
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & University of Oxford &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & NLCS Jeju & University of Oxford &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{3위 Stanford University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Stanford+University}{Google 검색}
+
+총 학생수: 15596, 학생-교수 비율: 7.8, 외국인 학생 수: 22\%, 여:남 성비:
+42 : 58
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Stanford University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+2016 & DIS & Stanford University &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{4위 University of Cambridge} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-cambridge?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Cambridge}{Google
+검색}
+
+총 학생수: 18812, 학생-교수 비율: 11.8, 외국인 학생 수: 34\%, 여:남
+성비: 46 : 54
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & NLCS Jeju & University of Cambridge &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{7위 Princeton University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Princeton+University}{Google
+검색}
+
+총 학생수: 7929, 학생-교수 비율: 8.4, 외국인 학생 수: 27\%, 여:남 성비:
+45 : 55
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Princeton University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{8위 Imperial College London} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/imperial-college-london?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Imperial+College+London}{Google
+검색}
+
+총 학생수: 15060, 학생-교수 비율: 11.7, 외국인 학생 수: 51\%, 여:남
+성비: 37 : 63
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & NLCS Jeju & Imperial College London &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{10위 University of Chicago} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-chicago?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Chicago}{Google
+검색}
+
+총 학생수: 14221, 학생-교수 비율: 6.9, 외국인 학생 수: 21\%, 여:남 성비:
+42 : 58
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & University of Chicago &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{11위 Johns Hopkins University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/johns-hopkins-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Johns+Hopkins+University}{Google
+검색}
+
+총 학생수: 15128, 학생-교수 비율: 3.6, 외국인 학생 수: 23\%, 여:남 성비:
+50 : 50
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Johns Hopkins University &
+\href{http://cafe.naver.com/assarabia/11589}{3명}\tabularnewline
+2016 & KIS Jeju & Johns Hopkins University &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & DIS & Johns Hopkins University &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & Johns Hopkins University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{13위 University of California, Berkeley} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-california-berkeley?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+California,+Berkeley}{Google
+검색}
+
+총 학생수: 36186, 학생-교수 비율: 16.4, 외국인 학생 수: 15\%, 여:남
+성비: 50 : 50
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & University of California, Berkeley &
+\href{http://cafe.naver.com/assarabia/11589}{4명}\tabularnewline
+2016 & KIS Jeju & University of California, Berkeley &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & DIS & University of California, Berkeley &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & TCIS & University of California, Berkeley &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of California, Berkeley &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{14위 University College London} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-college-london?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+College+London}{Google
+검색}
+
+총 학생수: 26607, 학생-교수 비율: 10.7, 외국인 학생 수: 46\%, 여:남
+성비: 56 : 44
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & University College London &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University College London &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{15위 Columbia University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Columbia+University}{Google 검색}
+
+총 학생수: 25055, 학생-교수 비율: 5.9, 외국인 학생 수: 28\%, 여:남 성비:
+NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Columbia University &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{16위 University of California, Los Angeles} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-california-los-angeles?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+California,+Los+Angeles}{Google
+검색}
+
+총 학생수: 38206, 학생-교수 비율: 10.3, 외국인 학생 수: 15\%, 여:남
+성비: 52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of California, Los Angeles &
+\href{http://cafe.naver.com/assarabia/11597}{2명}\tabularnewline
+2016 & KIS Jeju & University of California, Los Angeles &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & SIS & University of California, Los Angeles &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & DIS & University of California, Los Angeles &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & University of California, Los Angeles &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of California, Los Angeles &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{17위 University of Pennsylvania} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+Pennsylvania}{Google
+검색}
+
+총 학생수: 20376, 학생-교수 비율: 6.5, 외국인 학생 수: 20\%, 여:남 성비:
+51 : 49
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & University of Pennsylvania &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & DIS & University of Pennsylvania &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{18위 Cornell University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Cornell+University}{Google 검색}
+
+총 학생수: 21424, 학생-교수 비율: 10.2, 외국인 학생 수: 19\%, 여:남
+성비: 48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Cornell University &
+\href{http://cafe.naver.com/assarabia/11589}{8명}\tabularnewline
+2016 & BFS & Cornell University &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & KIS Jeju & Cornell University &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & TCIS & Cornell University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{19위 University of Toronto} / Canada /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-toronto?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Toronto}{Google
+검색}
+
+총 학생수: 66198, 학생-교수 비율: 19.5, 외국인 학생 수: 15\%, 여:남
+성비: NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of Toronto, CA &
+\href{http://cafe.naver.com/assarabia/11597}{2명}\tabularnewline
+2016 & TCIS & University of Toronto &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Toronto &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{20위 Duke University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/duke-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Duke+University}{Google 검색}
+
+총 학생수: 15172, 학생-교수 비율: 4.8, 외국인 학생 수: 17\%, 여:남 성비:
+49 : 51
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Duke University &
+\href{http://cafe.naver.com/assarabia/11589}{3명}\tabularnewline
+2016 & DIS & Duke University &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & TCIS & Duke University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & Duke University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{21위 University of Michigan} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-michigan?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Michigan}{Google
+검색}
+
+총 학생수: 41786, 학생-교수 비율: 9, 외국인 학생 수: 16\%, 여:남 성비:
+48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & University of Michigan &
+\href{http://cafe.naver.com/assarabia/11596}{2명}\tabularnewline
+2016 & DIS & University of Michigan &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & University of Michigan &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Michigan &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{22위 Carnegie Mellon University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/carnegie-mellon-university?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Carnegie+Mellon+University}{Google
+검색}
+
+총 학생수: 11885, 학생-교수 비율: 13.1, 외국인 학생 수: 35\%, 여:남
+성비: 39 : 61
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Carnegie Mellon University &
+\href{http://cafe.naver.com/assarabia/11589}{3명}\tabularnewline
+2016 & DIS & Carnegie Mellon University &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & Carnegie Mellon University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & Carnegie Mellon University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{24위 University of Edinburgh} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-edinburgh?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Edinburgh}{Google
+검색}
+
+총 학생수: 25774, 학생-교수 비율: 14.1, 외국인 학생 수: 36\%, 여:남
+성비: 58 : 42
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & University of Edinburgh &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & NLCS Jeju & University of Edinburgh &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{25위 Northwestern University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/northwestern-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Northwestern+University}{Google
+검색}
+
+총 학생수: 18334, 학생-교수 비율: 13.8, 외국인 학생 수: 15\%, 여:남
+성비: 48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & Northwestern University &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & SIS & Northwestern University &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & DIS & Northwestern University &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & TCIS & Northwestern University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{30위 New York University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/new-york-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=New+York+University}{Google 검색}
+
+총 학생수: 42056, 학생-교수 비율: 6.8, 외국인 학생 수: 19\%, 여:남 성비:
+55 : 45
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & New York University &
+\href{http://cafe.naver.com/assarabia/11596}{3명}\tabularnewline
+2016 & SIS & New York University &
+\href{http://cafe.naver.com/assarabia/11589}{17명}\tabularnewline
+2016 & BFS & New York University,NYU &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & DIS & New York University &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & New York University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & New York University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{32위 University of Washington} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-washington?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Washington}{Google
+검색}
+
+총 학생수: 44020, 학생-교수 비율: 11.8, 외국인 학생 수: 13\%, 여:남
+성비: 53 : 47
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of Washington &
+\href{http://cafe.naver.com/assarabia/11597}{2명}\tabularnewline
+2016 & TCIS & University of Washington &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{33위 University of Melbourne} / Australia /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-melbourne?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Melbourne}{Google
+검색}
+
+총 학생수: 40128, 학생-교수 비율: 23.7, 외국인 학생 수: 35\%, 여:남
+성비: 55 : 45
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & NLCS Jeju & The University of Melbourne &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{34위 University of British Columbia} / Canada /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-british-columbia?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+British+Columbia}{Google
+검색}
+
+총 학생수: 50152, 학생-교수 비율: 17.6, 외국인 학생 수: 25\%, 여:남
+성비: 54 : 46
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of British Columbia &
+\href{http://cafe.naver.com/assarabia/11597}{5명}\tabularnewline
+2016 & DIS & University of British Columbia &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & TCIS & University of British Columbia &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of British Columbia &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{36위 University of Illinois at Urbana-Champaign} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-illinois-at-urbana-champaign?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+Illinois+at+Urbana-Champaign}{Google
+검색}
+
+총 학생수: 42727, 학생-교수 비율: 18.7, 외국인 학생 수: 20\%, 여:남
+성비: 47 : 53
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & University of Illinois at Urbana-Champaign &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Illinois at Urbana-Champaign &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{38위 McGill University} / Canada /
+\href{https://www.timeshighereducation.com/world-university-rankings/mcgill-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=McGill+University}{Google 검색}
+
+총 학생수: 31326, 학생-교수 비율: 13.7, 외국인 학생 수: 23\%, 여:남
+성비: 56 : 44
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & McGill University &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & SIS & McGill University (Canada) &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & TCIS & McGill University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{39위 University of California, San Diego} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-california-san-diego?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+California,+San+Diego}{Google
+검색}
+
+총 학생수: 27233, 학생-교수 비율: 6.5, 외국인 학생 수: 11\%, 여:남 성비:
+48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of California, San Diego &
+\href{http://cafe.naver.com/assarabia/11597}{5명}\tabularnewline
+2016 & KIS Jeju & University of California, San Diego &
+\href{http://cafe.naver.com/assarabia/11596}{4명}\tabularnewline
+2016 & DIS & University of California, San Diego &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & University of California, San Diego &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of California, San Diego &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{39위 University of California, Santa Barbara} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-california-santa-barbara?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+California,+Santa+Barbara}{Google
+검색}
+
+총 학생수: 22020, 학생-교수 비율: 27.3, 외국인 학생 수: 11\%, 여:남
+성비: 52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & University of California, Santa Barbara &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & KIS Jeju & University of California, Santa Barbara &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & TCIS & University of California, Santa Barbara &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of California, Santa Barbara &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{41위 Georgia Institute of Technology} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/georgia-institute-of-technology?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Georgia+Institute+of+Technology}{Google
+검색}
+
+총 학생수: 19967, 학생-교수 비율: 20.1, 외국인 학생 수: 26\%, 여:남
+성비: 31 : 69
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & Georgia Institute of Technology &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & SIS & Georgia Institute of Technology &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & DIS & George Washington University Georgia Institute of
+Technology &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & TCIS & Georgia Institute of Technology &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{44위 University of California, Davis} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-california-davis?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+California,+Davis}{Google
+검색}
+
+총 학생수: 35364, 학생-교수 비율: 13.9, 외국인 학생 수: 13\%, 여:남
+성비: 54 : 46
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & University of California, Davis &
+\href{http://cafe.naver.com/assarabia/11596}{7명}\tabularnewline
+2016 & BFS & University of California, Davis &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & SIS & University of California, Davis &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & TCIS & University of California, Davis &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of California, Davis &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{44위 University of Hong Kong} / Hong Kong /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-hong-kong?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Hong+Kong}{Google
+검색}
+
+총 학생수: 19835, 학생-교수 비율: 17.6, 외국인 학생 수: 38\%, 여:남
+성비: 53 : 47
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11589}{4명}\tabularnewline
+2016 & KIS Jeju & City University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11596}{2명}\tabularnewline
+2016 & BFS & University of Hong Kong, HK &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & KIS Jeju & University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & TCIS & City University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & TCIS & The Chinese University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & TCIS & University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & The Chinese University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Hong Kong &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{50위 University of Wisconsin-Madison} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-wisconsin-madison?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+Wisconsin-Madison}{Google
+검색}
+
+총 학생수: 39655, 학생-교수 비율: 10.8, 외국인 학생 수: 11\%, 여:남
+성비: 51 : 49
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & University of Wisconsin-Madison &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{51위 Brown University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Brown+University}{Google 검색}
+
+총 학생수: 8653, 학생-교수 비율: 10.1, 외국인 학생 수: 19\%, 여:남 성비:
+NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Brown University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{52위 Australian National University} / Australia /
+\href{https://www.timeshighereducation.com/world-university-rankings/australian-national-university?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Australian+National+University}{Google
+검색}
+
+총 학생수: 14604, 학생-교수 비율: 19.2, 외국인 학생 수: 35\%, 여:남
+성비: 52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & Australian National University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{55위 Nanyang Technological University} / Singapore /
+\href{https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Nanyang+Technological+University}{Google
+검색}
+
+총 학생수: 25028, 학생-교수 비율: 16.2, 외국인 학생 수: 33\%, 여:남
+성비: 48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & Nanyang Technological University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{56위 University of Manchester} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-manchester?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Manchester}{Google
+검색}
+
+총 학생수: 34938, 학생-교수 비율: 15.3, 외국인 학생 수: 34\%, 여:남
+성비: 52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & University of Manchester &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Manchester &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{59위 Hong Kong University of Science and Technology} / Hong Kong
+/
+\href{https://www.timeshighereducation.com/world-university-rankings/hong-kong-university-of-science-and-technology?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Hong+Kong+University+of+Science+and+Technology}{Google
+검색}
+
+총 학생수: 11385, 학생-교수 비율: 23.8, 외국인 학생 수: 36\%, 여:남
+성비: NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & Hong Kong University of Science and Technology &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & KIS Jeju & The Hong Kong University of Science and Technology &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{64위 Boston University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/boston-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Boston+University}{Google 검색}
+
+총 학생수: 24789, 학생-교수 비율: 8.6, 외국인 학생 수: 17\%, 여:남 성비:
+58 : 42
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & Boston University &
+\href{http://cafe.naver.com/assarabia/11597}{2명}\tabularnewline
+2016 & SIS & Boston University &
+\href{http://cafe.naver.com/assarabia/11589}{2명}\tabularnewline
+2016 & KIS Jeju & Boston University &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & DIS & Boston University &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & TCIS & Boston University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & Boston University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{65위 University of Minnesota} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-minnesota?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Minnesota}{Google
+검색}
+
+총 학생수: 46825, 학생-교수 비율: 18, 외국인 학생 수: 13\%, 여:남 성비:
+52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of Minnesota &
+\href{http://cafe.naver.com/assarabia/11597}{2명}\tabularnewline
+2016 & TCIS & University of Minnesota, Twin Cities &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{68위 University of Southern California} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-southern-california?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=University+of+Southern+California}{Google
+검색}
+
+총 학생수: 36534, 학생-교수 비율: 12.9, 외국인 학생 수: 20\%, 여:남
+성비: 52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & University of Southern California &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+2016 & KIS Jeju & University of Southern California &
+\href{http://cafe.naver.com/assarabia/11596}{1명}\tabularnewline
+2016 & DIS & University of Southern California &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & TCIS & University of Southern California &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Southern California &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{69위 University of Bristol} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-bristol?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Bristol}{Google
+검색}
+
+총 학생수: 17906, 학생-교수 비율: 14, 외국인 학생 수: 25\%, 여:남 성비:
+53 : 47
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & University of Bristol &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & NLCS Jeju & University of Bristol &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{70위 Durham University} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/durham-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Durham+University}{Google 검색}
+
+총 학생수: 15489, 학생-교수 비율: 15.7, 외국인 학생 수: 24\%, 여:남
+성비: 54 : 46
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & Durham University &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & NLCS Jeju & Durham University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{74위 University of Groningen} / Netherlands /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-groningen?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Groningen}{Google
+검색}
+
+총 학생수: 30000, 학생-교수 비율: 25.6, 외국인 학생 수: 15\%, 여:남
+성비: 52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & University of Groningen &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{75위 Pennsylvania State University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/pennsylvania-state-university?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Pennsylvania+State+University}{Google
+검색}
+
+총 학생수: 44501, 학생-교수 비율: 12.4, 외국인 학생 수: 12\%, 여:남
+성비: 46 : 54
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & Pennsylvania State University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & Pennsylvania State University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{76위 University of Glasgow} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-glasgow?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Glasgow}{Google
+검색}
+
+총 학생수: 22616, 학생-교수 비율: 16, 외국인 학생 수: 29\%, 여:남 성비:
+57 : 43
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & NLCS Jeju & University of Glasgow &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{80위 University of Warwick} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-warwick?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Warwick}{Google
+검색}
+
+총 학생수: 18529, 학생-교수 비율: 16.6, 외국인 학생 수: 37\%, 여:남
+성비: 48 : 52
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & University of Warwick &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+2016 & NLCS Jeju & University of Warwick &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{85위 Seoul National University} / South Korea /
+\href{https://www.timeshighereducation.com/world-university-rankings/seoul-national-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Seoul+National+University}{Google
+검색}
+
+총 학생수: 26389, 학생-교수 비율: 13.9, 외국인 학생 수: 10\%, 여:남
+성비: NA
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & NLCS Jeju & Seoul National University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{90위 Emory University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/emory-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Emory+University}{Google 검색}
+
+총 학생수: 12338, 학생-교수 비율: 4.5, 외국인 학생 수: 18\%, 여:남 성비:
+56 : 44
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Emory University &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & DIS & Emory University &
+\href{http://cafe.naver.com/assarabia/11591}{\textgreater{}1명}\tabularnewline
+2016 & NLCS Jeju & Emory University &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{90위 Ohio State University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/ohio-state-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Ohio+State+University}{Google
+검색}
+
+총 학생수: 51462, 학생-교수 비율: 13.4, 외국인 학생 수: 12\%, 여:남
+성비: 49 : 51
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & KIS Jeju & Ohio State University &
+\href{http://cafe.naver.com/assarabia/11596}{2명}\tabularnewline
+2016 & TCIS & The Ohio State University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{93위 University of Exeter} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-exeter?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Exeter}{Google
+검색}
+
+총 학생수: 17755, 학생-교수 비율: 18.8, 외국인 학생 수: 28\%, 여:남
+성비: 54 : 46
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & NLCS Jeju & University of Exeter &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{94위 Georgetown University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/georgetown-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Georgetown+University}{Google
+검색}
+
+총 학생수: 15408, 학생-교수 비율: 8.5, 외국인 학생 수: 14\%, 여:남 성비:
+53 : 47
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & SIS & Georgetown University &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{94위 McMaster University} / Canada /
+\href{https://www.timeshighereducation.com/world-university-rankings/mcmaster-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=McMaster+University}{Google 검색}
+
+총 학생수: 23823, 학생-교수 비율: 19.3, 외국인 학생 수: 15\%, 여:남
+성비: 53 : 47
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & McMaster University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{97위 University of Sheffield} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/university-of-sheffield?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=University+of+Sheffield}{Google
+검색}
+
+총 학생수: 23311, 학생-교수 비율: 15.5, 외국인 학생 수: 31\%, 여:남
+성비: 50 : 50
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & TCIS & University of Sheffield &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+2016 & NLCS Jeju & University of Sheffield &
+\href{http://cafe.naver.com/assarabia/11592}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{98위 Queen Mary University of London} / United Kingdom /
+\href{https://www.timeshighereducation.com/world-university-rankings/queen-mary-university-of-london?ranking-dataset=133819}{대학교정보}
+/
+\href{http://www.google.com/search?q=Queen+Mary+University+of+London}{Google
+검색}
+
+총 학생수: 14260, 학생-교수 비율: 14, 외국인 학생 수: 40\%, 여:남 성비:
+52 : 48
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & Queen Mary University of London, UK &
+\href{http://cafe.naver.com/assarabia/11597}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{99위 Michigan State University} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/michigan-state-university?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Michigan+State+University}{Google
+검색}
+
+총 학생수: 44750, 학생-교수 비율: 15.7, 외국인 학생 수: 15\%, 여:남
+성비: 51 : 49
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & BFS & Michigan State University &
+\href{http://cafe.naver.com/assarabia/11597}{2명}\tabularnewline
+2016 & SIS & Michigan State University &
+\href{http://cafe.naver.com/assarabia/11589}{1명}\tabularnewline
+2016 & TCIS & Michigan State University &
+\href{http://cafe.naver.com/assarabia/11598}{\textgreater{}0명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{104위 Dartmouth College} / USA /
+\href{https://www.timeshighereducation.com/world-university-rankings/dartmouth-college?ranking-dataset=133819}{대학교정보}
+/ \href{http://www.google.com/search?q=Dartmouth+College}{Google 검색}
+
+총 학생수: 6178, 학생-교수 비율: 6.6, 외국인 학생 수: 16\%, 여:남 성비:
+47 : 53
+
+\begin{longtable}[]{@{}clll@{}}
+\toprule
+졸업년 & 학교명 & 대학교 & 합격인원\tabularnewline
+\midrule
+\endhead
+2016 & DIS & Dartmouth College &
+\href{http://cafe.naver.com/assarabia/11591}{1명}\tabularnewline
+\bottomrule
+\end{longtable}
+
+
+\end{document}

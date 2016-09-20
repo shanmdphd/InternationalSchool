@@ -108,1683 +108,1862 @@ $(document).ready(function () {
 <h1>2016 대학 랭킹별 국제학교, 외국인학교의 대입결과 분석 by NeedSchool (beta)</h1>
 <ul>
 <li>Author: PhilDoc</li>
-<li>Date: 2016-09-20</li>
+<li>Date: 2016-09-21</li>
 </ul>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <ul>
-<li><p>이 분석은 2016-09-20 현재, TCIS, BFS, KIS Jeju, SIS, NLCS Jeju의 5개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료 변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두 수집하여 분석하는 것을 목적으로 합니다.</p></li>
-<li><p>현재 분석은 beta version (v0.1)로서, 니드스쿨 학부모님들의 학교에 대한 이해를 위한 비영리적 목적으로 제작되었습니다. 틈틈히 이 페이지에 접속해서 조회해 주세요.</p></li>
-<li><p>학교 순위는 The Times Higher Education의 <a href="https://www.timeshighereducation.com/world-university-rankings/2016/world-ranking">World University Ranking 2015-2016</a> 을 기반으로 작성되었습니다. 학교 순위는 전적으로 영국의 언론사 The Times의 기준에 의해 부여된 숫자이기 때문에, 대학교의 질을 직접적으로 반영한다고 보긴 힘들다는 의견이 많습니다. 어디까지나 의사결정(decision making)을 위한 참고용으로 사용하길 추천드립니다.</p></li>
-<li><p>“&gt;0명”으로 표시된 숫자는 학교에서 대학교의 이름만 밝히고 몇 명의 학생이 입학허가를 받았는지 공개하지 않은 경우를 의미합니다.</p></li>
+<li>이 분석은 2016-09-21 현재, TCIS, BFS, KIS Jeju, SIS, NLCS Jeju, DIS의 6개의 국제학교, 외국인학교에 대해서 이루어 졌습니다. 현재 계속 자료 변환 및 입력중으로 30여개 국제학교, 외국인학교의 대입결과를 모두 수집하여 분석하는 것을 목적으로 합니다.</li>
+<li>현재 분석은 beta version (v0.1)로서, 니드스쿨 학부모님들의 학교에 대한 이해를 위한 비영리적 목적으로 제작되었습니다. 틈틈히 이 페이지에 접속해서 조회해 주세요.</li>
+<li>학교 순위는 The Times Higher Education의 <a href="https://www.timeshighereducation.com/world-university-rankings/2016/world-ranking">World University Ranking 2015-2016</a> 을 기반으로 작성되었습니다. 학교 순위는 전적으로 영국의 언론사 The Times의 기준에 의해 부여된 숫자이기 때문에, 대학교의 질을 직접적으로 반영한다고 보긴 힘들다는 의견이 많습니다. 어디까지나 의사결정(decision making)을 위한 참고용으로 사용하길 추천드립니다.</li>
+<li>“&gt;0명”으로 표시된 숫자는 학교에서 대학교의 이름만 밝히고 몇 명의 학생이 입학허가를 받았는지 공개하지 않은 경우를 의미합니다.</li>
+<li>“&gt;1명”으로 표시된 숫자는 학교에서 복수의 합격자가 있다고 보고한 경우입니다.</li>
 </ul>
 </div>
-<div id="hypsmc-schools" class="section level2">
-<h2>HYPSMC Schools</h2>
+<div id="hypsmc-" class="section level2">
+<h2>HYPSMC 대학교</h2>
 <ul>
-<li>HYPSMC = Harvard University, Yale University, Princeton University, Stanford University, MIT, Caltech</li>
+<li>HYPSMC 대학교란 미국 최상위 대학의 앞글자를 따서 지은 약어로, Harvard University, Yale University, Princeton University, Stanford University, MIT, Caltech 를 의미합니다.</li>
 </ul>
-<p><strong>Princeton University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Princeton University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Princeton+University">Google 검색</a></p>
+<p>총 학생수: 7929, 학생-교수 비율: 8.4, 외국인 학생 수: 27%, 여:남 성비: 45 : 55</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Princeton University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>Stanford University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Stanford University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Stanford+University">Google 검색</a></p>
+<p>총 학생수: 15596, 학생-교수 비율: 7.8, 외국인 학생 수: 22%, 여:남 성비: 42 : 58</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Stanford University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
+<tr class="even">
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Stanford University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
 </tbody>
 </table>
-<hr />
 </div>
-<div id="ivy-league-schools" class="section level2">
-<h2>Ivy League Schools</h2>
+<div class="section level2">
+<h2>아이비리그</h2>
 <ul>
-<li>Ivy league schools = Harvard University, Yale University, Princeton University, Columbia University, Dartmouth University, University of Pennsylvania, Brown University, Cornell University</li>
+<li>Ivy league schools 이란 Harvard University, Yale University, Princeton University, Columbia University, Dartmouth, University of Pennsylvania, Brown University, Cornell University 학교를 지칭합니다.</li>
 </ul>
-<p><strong>Princeton University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Princeton University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Princeton+University">Google 검색</a></p>
+<p>총 학생수: 7929, 학생-교수 비율: 8.4, 외국인 학생 수: 27%, 여:남 성비: 45 : 55</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Princeton University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>Columbia University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Columbia University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Columbia+University">Google 검색</a></p>
+<p>총 학생수: 25055, 학생-교수 비율: 5.9, 외국인 학생 수: 28%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Columbia University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>University of Pennsylvania</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Dartmouth College</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/dartmouth-college?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Dartmouth+College">Google 검색</a></p>
+<p>총 학생수: 6178, 학생-교수 비율: 6.6, 외국인 학생 수: 16%, 여:남 성비: 47 : 53</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Dartmouth College</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>University of Pennsylvania</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Pennsylvania">Google 검색</a></p>
+<p>총 학생수: 20376, 학생-교수 비율: 6.5, 외국인 학생 수: 20%, 여:남 성비: 51 : 49</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of Pennsylvania</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
+<tr class="even">
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Pennsylvania</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
 </tbody>
 </table>
-<hr />
-<p><strong>Brown University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Brown University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Brown+University">Google 검색</a></p>
+<p>총 학생수: 8653, 학생-교수 비율: 10.1, 외국인 학생 수: 19%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Brown University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>Cornell University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>Cornell University</strong> / <a href="https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Cornell+University">Google 검색</a></p>
+<p>총 학생수: 21424, 학생-교수 비율: 10.2, 외국인 학생 수: 19%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">8명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
 </div>
 <div id="ranking" class="section level2">
 <h2>Ranking</h2>
-<p><strong>2위 University of Oxford</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-oxford?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>2위 University of Oxford</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-oxford?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Oxford">Google 검색</a></p>
+<p>총 학생수: 19919, 학생-교수 비율: 11.6, 외국인 학생 수: 34%, 여:남 성비: 46 : 54</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Oxford</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Oxford</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>3위 Stanford University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>3위 Stanford University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/stanford-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Stanford+University">Google 검색</a></p>
+<p>총 학생수: 15596, 학생-교수 비율: 7.8, 외국인 학생 수: 22%, 여:남 성비: 42 : 58</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Stanford University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
+<tr class="even">
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Stanford University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
 </tbody>
 </table>
-<hr />
-<p><strong>4위 University of Cambridge</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-cambridge?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>4위 University of Cambridge</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-cambridge?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Cambridge">Google 검색</a></p>
+<p>총 학생수: 18812, 학생-교수 비율: 11.8, 외국인 학생 수: 34%, 여:남 성비: 46 : 54</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Cambridge</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>7위 Princeton University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>7위 Princeton University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/princeton-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Princeton+University">Google 검색</a></p>
+<p>총 학생수: 7929, 학생-교수 비율: 8.4, 외국인 학생 수: 27%, 여:남 성비: 45 : 55</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Princeton University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>8위 Imperial College London</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/imperial-college-london?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>8위 Imperial College London</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/imperial-college-london?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Imperial+College+London">Google 검색</a></p>
+<p>총 학생수: 15060, 학생-교수 비율: 11.7, 외국인 학생 수: 51%, 여:남 성비: 37 : 63</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Imperial College London</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>10위 University of Chicago</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-chicago?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>10위 University of Chicago</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-chicago?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Chicago">Google 검색</a></p>
+<p>총 학생수: 14221, 학생-교수 비율: 6.9, 외국인 학생 수: 21%, 여:남 성비: 42 : 58</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of Chicago</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>11위 Johns Hopkins University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/johns-hopkins-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>11위 Johns Hopkins University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/johns-hopkins-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Johns+Hopkins+University">Google 검색</a></p>
+<p>총 학생수: 15128, 학생-교수 비율: 3.6, 외국인 학생 수: 23%, 여:남 성비: 50 : 50</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Johns Hopkins University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">3명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Johns Hopkins University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Johns Hopkins University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Johns Hopkins University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>13위 University of California, Berkeley</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-berkeley?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>13위 University of California, Berkeley</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-berkeley?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+California,+Berkeley">Google 검색</a></p>
+<p>총 학생수: 36186, 학생-교수 비율: 16.4, 외국인 학생 수: 15%, 여:남 성비: 50 : 50</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of California, Berkeley</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">4명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of California, Berkeley</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of California, Berkeley</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of California, Berkeley</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="even">
-<td align="right">2016</td>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of California, Berkeley</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>14위 University College London</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-college-london?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>14위 University College London</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-college-london?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+College+London">Google 검색</a></p>
+<p>총 학생수: 26607, 학생-교수 비율: 10.7, 외국인 학생 수: 46%, 여:남 성비: 56 : 44</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University College London</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University College London</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>15위 Columbia University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>15위 Columbia University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/columbia-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Columbia+University">Google 검색</a></p>
+<p>총 학생수: 25055, 학생-교수 비율: 5.9, 외국인 학생 수: 28%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Columbia University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>16위 University of California, Los Angeles</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-los-angeles?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>16위 University of California, Los Angeles</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-los-angeles?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+California,+Los+Angeles">Google 검색</a></p>
+<p>총 학생수: 38206, 학생-교수 비율: 10.3, 외국인 학생 수: 15%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of California, Los Angeles</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of California, Los Angeles</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of California, Los Angeles</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of California, Los Angeles</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of California, Los Angeles</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of California, Los Angeles</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>17위 University of Pennsylvania</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>17위 University of Pennsylvania</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-pennsylvania?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Pennsylvania">Google 검색</a></p>
+<p>총 학생수: 20376, 학생-교수 비율: 6.5, 외국인 학생 수: 20%, 여:남 성비: 51 : 49</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of Pennsylvania</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
+<tr class="even">
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Pennsylvania</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
 </tbody>
 </table>
-<hr />
-<p><strong>18위 Cornell University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>18위 Cornell University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/cornell-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Cornell+University">Google 검색</a></p>
+<p>총 학생수: 21424, 학생-교수 비율: 10.2, 외국인 학생 수: 19%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">8명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Cornell University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>19위 University of Toronto</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-toronto?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>19위 University of Toronto</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-toronto?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Toronto">Google 검색</a></p>
+<p>총 학생수: 66198, 학생-교수 비율: 19.5, 외국인 학생 수: 15%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of Toronto, CA</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Toronto</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Toronto</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>20위 Duke University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/duke-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>20위 Duke University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/duke-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Duke+University">Google 검색</a></p>
+<p>총 학생수: 15172, 학생-교수 비율: 4.8, 외국인 학생 수: 17%, 여:남 성비: 49 : 51</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Duke University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">3명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Duke University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Duke University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Duke University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>21위 University of Michigan</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-michigan?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>21위 University of Michigan</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-michigan?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Michigan">Google 검색</a></p>
+<p>총 학생수: 41786, 학생-교수 비율: 9, 외국인 학생 수: 16%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of Michigan</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Michigan</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Michigan</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Michigan</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>22위 Carnegie Mellon University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/carnegie-mellon-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>22위 Carnegie Mellon University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/carnegie-mellon-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Carnegie+Mellon+University">Google 검색</a></p>
+<p>총 학생수: 11885, 학생-교수 비율: 13.1, 외국인 학생 수: 35%, 여:남 성비: 39 : 61</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Carnegie Mellon University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">3명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Carnegie Mellon University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Carnegie Mellon University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Carnegie Mellon University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>24위 University of Edinburgh</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-edinburgh?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>24위 University of Edinburgh</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-edinburgh?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Edinburgh">Google 검색</a></p>
+<p>총 학생수: 25774, 학생-교수 비율: 14.1, 외국인 학생 수: 36%, 여:남 성비: 58 : 42</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Edinburgh</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Edinburgh</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>25위 Northwestern University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/northwestern-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>25위 Northwestern University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/northwestern-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Northwestern+University">Google 검색</a></p>
+<p>총 학생수: 18334, 학생-교수 비율: 13.8, 외국인 학생 수: 15%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Northwestern University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Northwestern University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Northwestern University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Northwestern University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>30위 New York University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/new-york-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>30위 New York University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/new-york-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=New+York+University">Google 검색</a></p>
+<p>총 학생수: 42056, 학생-교수 비율: 6.8, 외국인 학생 수: 19%, 여:남 성비: 55 : 45</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">New York University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">3명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">New York University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">17명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">New York University,NYU</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">New York University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">New York University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">New York University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>32위 University of Washington</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-washington?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>32위 University of Washington</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-washington?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Washington">Google 검색</a></p>
+<p>총 학생수: 44020, 학생-교수 비율: 11.8, 외국인 학생 수: 13%, 여:남 성비: 53 : 47</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of Washington</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Washington</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>33위 University of Melbourne</strong> / Australia / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-melbourne?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>33위 University of Melbourne</strong> / Australia / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-melbourne?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Melbourne">Google 검색</a></p>
+<p>총 학생수: 40128, 학생-교수 비율: 23.7, 외국인 학생 수: 35%, 여:남 성비: 55 : 45</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">The University of Melbourne</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>34위 University of British Columbia</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-british-columbia?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>34위 University of British Columbia</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-british-columbia?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+British+Columbia">Google 검색</a></p>
+<p>총 학생수: 50152, 학생-교수 비율: 17.6, 외국인 학생 수: 25%, 여:남 성비: 54 : 46</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of British Columbia</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">5명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of British Columbia</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of British Columbia</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of British Columbia</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>36위 University of Illinois at Urbana-Champaign</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-illinois-at-urbana-champaign?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>36위 University of Illinois at Urbana-Champaign</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-illinois-at-urbana-champaign?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Illinois+at+Urbana-Champaign">Google 검색</a></p>
+<p>총 학생수: 42727, 학생-교수 비율: 18.7, 외국인 학생 수: 20%, 여:남 성비: 47 : 53</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Illinois at Urbana-Champaign</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Illinois at Urbana-Champaign</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>38위 McGill University</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/mcgill-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>38위 McGill University</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/mcgill-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=McGill+University">Google 검색</a></p>
+<p>총 학생수: 31326, 학생-교수 비율: 13.7, 외국인 학생 수: 23%, 여:남 성비: 56 : 44</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">McGill University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">McGill University (Canada)</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">McGill University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>39위 University of California, San Diego</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-san-diego?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>39위 University of California, San Diego</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-san-diego?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+California,+San+Diego">Google 검색</a></p>
+<p>총 학생수: 27233, 학생-교수 비율: 6.5, 외국인 학생 수: 11%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of California, San Diego</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">5명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of California, San Diego</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">4명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of California, San Diego</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of California, San Diego</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="even">
-<td align="right">2016</td>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of California, San Diego</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>39위 University of California, Santa Barbara</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-santa-barbara?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>39위 University of California, Santa Barbara</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-santa-barbara?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+California,+Santa+Barbara">Google 검색</a></p>
+<p>총 학생수: 22020, 학생-교수 비율: 27.3, 외국인 학생 수: 11%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of California, Santa Barbara</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of California, Santa Barbara</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of California, Santa Barbara</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of California, Santa Barbara</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>41위 Georgia Institute of Technology</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/georgia-institute-of-technology?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>41위 Georgia Institute of Technology</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/georgia-institute-of-technology?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Georgia+Institute+of+Technology">Google 검색</a></p>
+<p>총 학생수: 19967, 학생-교수 비율: 20.1, 외국인 학생 수: 26%, 여:남 성비: 31 : 69</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Georgia Institute of Technology</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Georgia Institute of Technology</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">George Washington University Georgia Institute of Technology</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Georgia Institute of Technology</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>44위 University of California, Davis</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-davis?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>44위 University of California, Davis</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-california-davis?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+California,+Davis">Google 검색</a></p>
+<p>총 학생수: 35364, 학생-교수 비율: 13.9, 외국인 학생 수: 13%, 여:남 성비: 54 : 46</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of California, Davis</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">7명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of California, Davis</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of California, Davis</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of California, Davis</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of California, Davis</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>44위 University of Hong Kong</strong> / Hong Kong / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-hong-kong?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>44위 University of Hong Kong</strong> / Hong Kong / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-hong-kong?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Hong+Kong">Google 검색</a></p>
+<p>총 학생수: 19835, 학생-교수 비율: 17.6, 외국인 학생 수: 38%, 여:남 성비: 53 : 47</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">4명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">City University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">2명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of Hong Kong, HK</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">City University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">The Chinese University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">The Chinese University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Hong Kong</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>50위 University of Wisconsin-Madison</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-wisconsin-madison?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>50위 University of Wisconsin-Madison</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-wisconsin-madison?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Wisconsin-Madison">Google 검색</a></p>
+<p>총 학생수: 39655, 학생-교수 비율: 10.8, 외국인 학생 수: 11%, 여:남 성비: 51 : 49</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of Wisconsin-Madison</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>51위 Brown University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>51위 Brown University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/brown-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Brown+University">Google 검색</a></p>
+<p>총 학생수: 8653, 학생-교수 비율: 10.1, 외국인 학생 수: 19%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Brown University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>52위 Australian National University</strong> / Australia / <a href="https://www.timeshighereducation.com/world-university-rankings/australian-national-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>52위 Australian National University</strong> / Australia / <a href="https://www.timeshighereducation.com/world-university-rankings/australian-national-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Australian+National+University">Google 검색</a></p>
+<p>총 학생수: 14604, 학생-교수 비율: 19.2, 외국인 학생 수: 35%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Australian National University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>55위 Nanyang Technological University</strong> / Singapore / <a href="https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>55위 Nanyang Technological University</strong> / Singapore / <a href="https://www.timeshighereducation.com/world-university-rankings/nanyang-technological-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Nanyang+Technological+University">Google 검색</a></p>
+<p>총 학생수: 25028, 학생-교수 비율: 16.2, 외국인 학생 수: 33%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Nanyang Technological University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>56위 University of Manchester</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-manchester?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>56위 University of Manchester</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-manchester?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Manchester">Google 검색</a></p>
+<p>총 학생수: 34938, 학생-교수 비율: 15.3, 외국인 학생 수: 34%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Manchester</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Manchester</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>59위 Hong Kong University of Science and Technology</strong> / Hong Kong / <a href="https://www.timeshighereducation.com/world-university-rankings/hong-kong-university-of-science-and-technology?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>59위 Hong Kong University of Science and Technology</strong> / Hong Kong / <a href="https://www.timeshighereducation.com/world-university-rankings/hong-kong-university-of-science-and-technology?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Hong+Kong+University+of+Science+and+Technology">Google 검색</a></p>
+<p>총 학생수: 11385, 학생-교수 비율: 23.8, 외국인 학생 수: 36%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Hong Kong University of Science and Technology</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">The Hong Kong University of Science and Technology</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>64위 Boston University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/boston-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>64위 Boston University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/boston-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Boston+University">Google 검색</a></p>
+<p>총 학생수: 24789, 학생-교수 비율: 8.6, 외국인 학생 수: 17%, 여:남 성비: 58 : 42</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">Boston University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Boston University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">2명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Boston University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Boston University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Boston University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="odd">
-<td align="right">2016</td>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Boston University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>65위 University of Minnesota</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-minnesota?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>65위 University of Minnesota</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-minnesota?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Minnesota">Google 검색</a></p>
+<p>총 학생수: 46825, 학생-교수 비율: 18, 외국인 학생 수: 13%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of Minnesota</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Minnesota, Twin Cities</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>68위 University of Southern California</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-southern-california?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>68위 University of Southern California</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-southern-california?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Southern+California">Google 검색</a></p>
+<p>총 학생수: 36534, 학생-교수 비율: 12.9, 외국인 학생 수: 20%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">University of Southern California</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">University of Southern California</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Southern California</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Southern California</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
-<tr class="even">
-<td align="right">2016</td>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Southern California</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>69위 University of Bristol</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-bristol?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>69위 University of Bristol</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-bristol?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Bristol">Google 검색</a></p>
+<p>총 학생수: 17906, 학생-교수 비율: 14, 외국인 학생 수: 25%, 여:남 성비: 53 : 47</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Bristol</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Bristol</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>70위 Durham University</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/durham-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>70위 Durham University</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/durham-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Durham+University">Google 검색</a></p>
+<p>총 학생수: 15489, 학생-교수 비율: 15.7, 외국인 학생 수: 24%, 여:남 성비: 54 : 46</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Durham University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Durham University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>74위 University of Groningen</strong> / Netherlands / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-groningen?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>74위 University of Groningen</strong> / Netherlands / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-groningen?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Groningen">Google 검색</a></p>
+<p>총 학생수: 30000, 학생-교수 비율: 25.6, 외국인 학생 수: 15%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Groningen</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>75위 Pennsylvania State University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/pennsylvania-state-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>75위 Pennsylvania State University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/pennsylvania-state-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Pennsylvania+State+University">Google 검색</a></p>
+<p>총 학생수: 44501, 학생-교수 비율: 12.4, 외국인 학생 수: 12%, 여:남 성비: 46 : 54</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Pennsylvania State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Pennsylvania State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>76위 University of Glasgow</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-glasgow?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>76위 University of Glasgow</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-glasgow?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Glasgow">Google 검색</a></p>
+<p>총 학생수: 22616, 학생-교수 비율: 16, 외국인 학생 수: 29%, 여:남 성비: 57 : 43</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Glasgow</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>80위 University of Warwick</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-warwick?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>80위 University of Warwick</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-warwick?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Warwick">Google 검색</a></p>
+<p>총 학생수: 18529, 학생-교수 비율: 16.6, 외국인 학생 수: 37%, 여:남 성비: 48 : 52</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">University of Warwick</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+<tr class="even">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Warwick</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>85위 Seoul National University</strong> / South Korea / <a href="https://www.timeshighereducation.com/world-university-rankings/seoul-national-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>85위 Seoul National University</strong> / South Korea / <a href="https://www.timeshighereducation.com/world-university-rankings/seoul-national-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Seoul+National+University">Google 검색</a></p>
+<p>총 학생수: 26389, 학생-교수 비율: 13.9, 외국인 학생 수: 10%, 여:남 성비: NA</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Seoul National University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>90위 Emory University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/emory-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>90위 Emory University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/emory-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Emory+University">Google 검색</a></p>
+<p>총 학생수: 12338, 학생-교수 비율: 4.5, 외국인 학생 수: 18%, 여:남 성비: 56 : 44</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Emory University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Emory University</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">&gt;1명</a></td>
+</tr>
+<tr class="odd">
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">Emory University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>90위 Ohio State University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/ohio-state-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>90위 Ohio State University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/ohio-state-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Ohio+State+University">Google 검색</a></p>
+<p>총 학생수: 51462, 학생-교수 비율: 13.4, 외국인 학생 수: 12%, 여:남 성비: 49 : 51</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">KIS Jeju</td>
 <td align="left">Ohio State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11596">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">The Ohio State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>93위 University of Exeter</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-exeter?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>93위 University of Exeter</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-exeter?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Exeter">Google 검색</a></p>
+<p>총 학생수: 17755, 학생-교수 비율: 18.8, 외국인 학생 수: 28%, 여:남 성비: 54 : 46</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Exeter</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>94위 Georgetown University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/georgetown-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>94위 Georgetown University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/georgetown-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Georgetown+University">Google 검색</a></p>
+<p>총 학생수: 15408, 학생-교수 비율: 8.5, 외국인 학생 수: 14%, 여:남 성비: 53 : 47</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Georgetown University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>94위 McMaster University</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/mcmaster-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>94위 McMaster University</strong> / Canada / <a href="https://www.timeshighereducation.com/world-university-rankings/mcmaster-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=McMaster+University">Google 검색</a></p>
+<p>총 학생수: 23823, 학생-교수 비율: 19.3, 외국인 학생 수: 15%, 여:남 성비: 53 : 47</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">McMaster University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>97위 University of Sheffield</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-sheffield?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>97위 University of Sheffield</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/university-of-sheffield?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=University+of+Sheffield">Google 검색</a></p>
+<p>총 학생수: 23311, 학생-교수 비율: 15.5, 외국인 학생 수: 31%, 여:남 성비: 50 : 50</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">University of Sheffield</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">NLCS Jeju</td>
 <td align="left">University of Sheffield</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11592">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>98위 Queen Mary University of London</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/queen-mary-university-of-london?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>98위 Queen Mary University of London</strong> / United Kingdom / <a href="https://www.timeshighereducation.com/world-university-rankings/queen-mary-university-of-london?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Queen+Mary+University+of+London">Google 검색</a></p>
+<p>총 학생수: 14260, 학생-교수 비율: 14, 외국인 학생 수: 40%, 여:남 성비: 52 : 48</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">Queen Mary University of London, UK</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">1명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<p><strong>99위 Michigan State University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/michigan-state-university?ranking-dataset=133819">대학교정보</a></p>
+<p><strong>99위 Michigan State University</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/michigan-state-university?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Michigan+State+University">Google 검색</a></p>
+<p>총 학생수: 44750, 학생-교수 비율: 15.7, 외국인 학생 수: 15%, 여:남 성비: 51 : 49</p>
 <table>
 <thead>
 <tr class="header">
-<th align="right">YEAR</th>
-<th align="left">ABBR</th>
-<th align="left">UNIV</th>
-<th align="left">ADMISSION</th>
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">BFS</td>
 <td align="left">Michigan State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11597">2명</a></td>
 </tr>
 <tr class="even">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">SIS</td>
 <td align="left">Michigan State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11589">1명</a></td>
 </tr>
 <tr class="odd">
-<td align="right">2016</td>
+<td align="center">2016</td>
 <td align="left">TCIS</td>
 <td align="left">Michigan State University</td>
 <td align="left"><a href="http://cafe.naver.com/assarabia/11598">&gt;0명</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
+<p><strong>104위 Dartmouth College</strong> / USA / <a href="https://www.timeshighereducation.com/world-university-rankings/dartmouth-college?ranking-dataset=133819">대학교정보</a> / <a href="http://www.google.com/search?q=Dartmouth+College">Google 검색</a></p>
+<p>총 학생수: 6178, 학생-교수 비율: 6.6, 외국인 학생 수: 16%, 여:남 성비: 47 : 53</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">졸업년</th>
+<th align="left">학교명</th>
+<th align="left">대학교</th>
+<th align="left">합격인원</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">2016</td>
+<td align="left">DIS</td>
+<td align="left">Dartmouth College</td>
+<td align="left"><a href="http://cafe.naver.com/assarabia/11591">1명</a></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

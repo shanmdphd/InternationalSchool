@@ -30,7 +30,13 @@ html_document:
   toc: no
 pdf_document:
   fig_width: 4
+  includes:
+    in_header: preamble.tex
+  keep_tex: yes
   latex_engine: xelatex
+  toc: true
+  toc_depth: 2
+  number_sections: true
 word_document:
   highlight: tango
   keep_md: yes
