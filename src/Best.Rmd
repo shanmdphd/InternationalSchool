@@ -1,0 +1,15 @@
+```{r, results='asis', include = 'FALSE'}
+library(knitr)
+Best = function(yymm){
+    URL = paste0("http://cafe.naver.com/ManageStatisticsBestArticle.nhn?clubid=11133417&query.period=month&query.time=20", yymm, "01&query.start=")
+    Markdown = paste0("[", yymm, "](", URL, ")")
+    cat("\n- ", Markdown, "\n", sep= "")
+    #browseURL(URL)
+}
+
+input = c(paste0(c("14"), sprintf("%02d", seq(09, 12))), paste0(c("15"), sprintf("%02d", seq(01, 12))), paste0(c("16"), sprintf("%02d", seq(01, 08))))
+
+for (i in 1:length(input)){
+  Best(input[i])
+}
+```
