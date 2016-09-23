@@ -1,5 +1,5 @@
 prettydoc::html_pretty:
-  theme: cayman
+  theme: hpstr #cayman, architect, tactile, hpstr, leonids
   highlight: github
   self_contained: false
 bookdown::gitbook:
